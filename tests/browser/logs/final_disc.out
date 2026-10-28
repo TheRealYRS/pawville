@@ -1,0 +1,10 @@
+PASS A moved right and only A (y unchanged)  [(320, 458)->(378.9, 458)]
+PASS B moved left, at the same time  [(320, 458)->(251.0, 458)]
+PASS each sees the other exactly where it is
+PASS A still controls A after B disconnects (no stale target)  [(378.9, 458)->(496.1, 458)]
+PASS B left A's roster
+PASS a reconnecting player controls only their own cat, with a fresh identity  [(320, 458)->(251.0, 458)]
+PASS and A did not move  [(498.0, 458)->(498.0, 458)]
+PASS no console errors  [[]]
+PASS no keydown-listener build-up on A  [{'w:test': 0, 'd:selectionchange': 1, 'w:popstate': 2, 'w:pawville:navigate': 1, 'w:online': 1, 'w:focus': 1, 'd:visibilitychange': 3, 'w:__playwright_global_listeners_check__': 1, 'w:mousemove': 1, 'w:pointerdown': 1, 'w:pointerup': 1, 'w:touchstart': 1, 'w:touchend': 1, 'w:touchcancel': 1, 'w:mousedown': 1, 'w:mouseup': 1, 'w:click': 1, 'w:auxclick': 1, 'w:dblclick': 1, 'w:contextmenu': 1, 'w:keydown': 3, 'w:keyup': 1, 'w:blur': 1, 'w:storage': 1, 'w:pagehide': 3}]
+== ownership: opposite moves, disconnect, reconnect: 9/9 checks passed

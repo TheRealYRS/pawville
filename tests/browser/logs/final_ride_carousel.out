@@ -1,0 +1,10 @@
+PASS claim published when boarding
+PASS A is seated on the ride  [{'x': 489.1668858239637, 'y': 299.9878843758533, 'pose': 'sit', 'facing': 'left', 'lift': 10.824316076972694, 'sortY': 300.1878843758533, 'noShadow': False}]
+PASS B draws A exactly on the ride model's seat for the same instant  [max 0.1px over 5 samples]
+PASS remote rider has the ride draw order
+PASS rider cannot walk off  [(470.0, 286.0)->(473.0, 279.5)]
+PASS gets off at the next stop; claim released
+PASS B no longer sees A on the ride
+PASS movement restored  [526->571.0]
+PASS no console errors  [[]]
+== ride: carousel: 9/9 checks passed

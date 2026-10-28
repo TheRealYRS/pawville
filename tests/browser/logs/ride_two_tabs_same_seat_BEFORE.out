@@ -1,0 +1,12 @@
+(0.2, None, None, None, (140, 304, 'stand'))
+(4.9, None, None, (185, 268, 'sit'), (189, 259, 'sit'))
+(9.6, None, None, (185, 215, 'sit'), (180, 208, 'sit'))
+(14.2, None, None, (132, 190, 'sit'), (132, 190, 'sit'))
+(18.8, None, None, (92, 222, 'sit'), (92, 221, 'sit'))
+(23.4, None, None, (94, 265, 'sit'), (99, 273, 'sit'))
+(28.0, None, None, (144, 293, 'sit'), None)
+(32.6, None, None, (183, 270, 'sit'), None)
+samples with both riding: 0  on the SAME seat: 0
+A sees other rider: [{'x': 166.0, 'y': 312.0, 'lift': 0, 'pose': 'stand', 'sortY': None, 'noShadow': None}]
+B sees other rider: [{'x': 178.0, 'y': 205.1, 'lift': 0, 'pose': 'sit', 'sortY': None, 'noShadow': None}]
+errors [] []

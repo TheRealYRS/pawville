@@ -1,0 +1,49 @@
+{
+  "name": "paw-vs-paw",
+  "private": true,
+  "version": "3.1.0",
+  "description": "Pawville — a cozy virtual world for long-distance couples (React + TypeScript + Vite + Supabase), home of Paw vs Paw, PawType, Cat Boxing, Cat Battleship, Memory Paws, Whack-a-Cat, Puzzle Garden and Paw Snap. Milestone 6: regions, quests, Racon, installable PWA/Android/desktop.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --experimental-strip-types \"tests/*.test.ts\"",
+    "smoke": "node scripts/smoke-test.mjs",
+    "verify:files": "node scripts/verify-pawville-files.mjs",
+    "android:add": "cap add android",
+    "android:sync": "npm run build && cap sync android",
+    "android:open": "cap open android",
+    "android:apk": "npm run android:sync && cd android && ./gradlew assembleDebug",
+    "desktop:start": "npm run build && cd desktop && npm install && npm start",
+    "desktop:win": "npm run build && cd desktop && npm install && npm run dist:win",
+    "previews": "node --experimental-strip-types scripts/render-previews.ts previews 22050",
+    "audit:map": "node --experimental-strip-types scripts/map-audit.ts",
+    "audit:interactions": "node --experimental-strip-types scripts/interaction-audit.ts",
+    "test:ui": "python scripts/browser/ui_layout.py ."
+  },
+  "dependencies": {
+    "@fontsource/fredoka": "^5.2.5",
+    "@fontsource/nunito": "^5.2.5",
+    "@supabase/supabase-js": "^2.117.0",
+    "qrcode": "^1.5.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "@capacitor/core": "^6.2.0",
+    "@capacitor/android": "^6.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^4.4.1",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5",
+    "@capacitor/cli": "^6.2.0"
+  }
+}

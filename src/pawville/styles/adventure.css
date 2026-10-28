@@ -1,0 +1,121 @@
+/* Milestone 6 — adventure UI (dialogue, tracker, journal, world map, puzzles, fishing). Uses the existing tokens. */
+.pv-tracker { display: grid; gap: 1px; max-width: min(260px, 46vw); padding: 5px 12px; border-radius: var(--r-lg); background: rgb(13 11 18 / 0.78);
+  border: 1px solid rgb(255 201 74 / 0.45); color: var(--cream); text-align: left; font-family: var(--font-body); cursor: pointer; }
+.pv-tracker:hover, .pv-tracker:focus-visible { border-color: var(--gold); outline: none; }
+.pv-tracker__title { font-family: var(--font-display); font-weight: 700; font-size: 12px; color: var(--gold); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pv-tracker__obj { font-size: 12px; line-height: 1.25; }
+.pv-tracker__more { font-size: 11px; opacity: 0.7; }
+
+.pv-dialogue { position: absolute; z-index: 30; left: 50%; bottom: calc(env(safe-area-inset-bottom) + 76px); transform: translateX(-50%); width: min(560px, calc(100vw - 20px));
+  display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border-radius: var(--r-lg); background: rgb(23 19 30 / 0.96); border: 1px solid var(--border-strong);
+  box-shadow: var(--shadow-2); color: var(--cream); animation: pv-pop-in 0.2s var(--ease-bounce); }
+.pv-dialogue__portrait { flex: none; width: 60px; height: 60px; display: grid; place-items: center; border-radius: 14px; background: var(--panel-2); image-rendering: pixelated; overflow: hidden; }
+.pv-dialogue__body { flex: 1; min-width: 0; }
+.pv-dialogue__name { margin: 0 0 4px; font-family: var(--font-display); font-size: 15px; color: var(--orange); }
+.pv-dialogue__text { margin: 0; font-size: 15px; line-height: 1.45; min-height: 2.9em; }
+.pv-dialogue__actions { display: flex; align-items: center; justify-content: flex-end; gap: 8px; margin-top: 8px; }
+.pv-dialogue__count { margin-right: auto; font-size: 12px; opacity: 0.6; }
+
+.pv-tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.pv-tab { min-height: 36px; padding: 6px 12px; border-radius: var(--r-pill); border: 1px solid var(--border); background: var(--panel-2); color: var(--cream); font-family: var(--font-display); font-weight: 600; font-size: 13px; }
+.pv-tab.is-active { background: var(--orange); color: #2a1406; border-color: var(--orange); }
+.pv-journal__list { display: grid; gap: 10px; max-height: min(60vh, 520px); overflow-y: auto; padding-right: 4px; }
+.pv-journal__h { margin: 8px 0 0; font-size: 14px; color: var(--gold); }
+.pv-journal__avail, .pv-journal__done { margin: 0; font-size: 14px; }
+.pv-quest, .pv-entry { padding: 10px 12px; border-radius: var(--r-md, 12px); background: var(--panel-2); border: 1px solid var(--border); }
+.pv-quest--main { border-color: rgb(255 201 74 / 0.6); }
+.pv-quest h3, .pv-entry h3 { margin: 2px 0 4px; font-size: 16px; }
+.pv-quest__layer, .pv-entry__kind { font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase; opacity: 0.75; }
+.pv-quest__summary, .pv-entry p { margin: 0 0 6px; font-size: 14px; line-height: 1.4; }
+.pv-quest__steps { margin: 0; padding-left: 20px; display: grid; gap: 4px; font-size: 14px; }
+.pv-quest__steps .is-done { opacity: 0.55; text-decoration: line-through; }
+.pv-quest__steps .is-done::marker { content: '✓ '; }
+.pv-quest__steps .is-current { font-weight: 700; }
+.pv-quest__hint { display: block; font-weight: 400; font-size: 13px; color: var(--lavender-2, #c9bfe8); margin-top: 2px; }
+.pv-lumi-pattern { display: block; margin-top: 6px; }
+
+.pv-worldmap__svg { width: 100%; max-height: 52vh; aspect-ratio: 1; display: block; }
+.pv-worldmap__node { cursor: pointer; }
+.pv-worldmap__node:focus-visible circle { stroke: var(--gold); stroke-width: 1.6; }
+.pv-worldmap__info h3 { margin: 8px 0 4px; }
+.pv-worldmap__info p { margin: 0 0 6px; font-size: 14px; }
+.pv-worldmap__req { display: block; color: var(--gold); margin-top: 4px; }
+.pv-worldmap__q { color: var(--gold); }
+
+.pv-lens { display: grid; gap: 10px; margin: 12px 0; }
+.pv-lens__ring { display: grid; grid-template-columns: 1fr auto 96px auto; align-items: center; gap: 8px; }
+.pv-lens__label { font-weight: 700; }
+.pv-lens__symbol { display: grid; place-items: center; height: 56px; border-radius: 50%; border: 3px solid #c2a052; background: #2a1d2f; font-size: 26px; color: var(--gold); }
+.pv-lens__symbol small { font-size: 11px; color: var(--cream); }
+.pv-lens__symbol.is-solved { box-shadow: 0 0 18px #ffe9a8; }
+.pv-puzzle__win { color: var(--gold); font-weight: 700; }
+.pv-sky { position: relative; height: 230px; margin: 10px 0; border-radius: 14px; background: radial-gradient(#24306b, #121035); }
+.pv-sky__star { position: absolute; width: 44px; height: 44px; transform: translate(-50%, -50%); border: 0; border-radius: 50%; background: transparent; color: #8f8ab0; font-size: 22px; cursor: pointer; }
+.pv-sky__star.is-on { color: #fff3c4; text-shadow: 0 0 10px #ffe27a; }
+.pv-sky__star:focus-visible { outline: var(--pv-focus-ring); }
+
+.pv-fishing { z-index: 25; }
+.pill-btn.is-hot { background: var(--orange); color: #2a1406; animation: pv-pop-in 0.3s var(--ease-bounce) infinite alternate; }
+
+.pv-town.is-traveling::after { content: ''; position: absolute; inset: 0; z-index: 50; background: #0d0b12; animation: pv-fade-travel 0.38s ease both; pointer-events: none; }
+@keyframes pv-fade-travel { from { opacity: 0; } 50% { opacity: 1; } to { opacity: 1; } }
+.pv-nametag--npc { background: rgb(42 29 47 / 0.85); }
+
+@media (max-width: 560px) {
+  .pv-tracker { max-width: 60vw; }
+  .pv-dialogue { bottom: calc(env(safe-area-inset-bottom) + 64px); }
+  .pv-dialogue__portrait { width: 44px; height: 44px; }
+  .pv-lens__ring { grid-template-columns: 1fr auto 72px auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pv-dialogue, .pill-btn.is-hot { animation: none; }
+  .pv-town.is-traveling::after { animation-duration: 0.01s; }
+}
+
+.pv-update-ready { position: fixed; z-index: 100; left: 50%; top: calc(env(safe-area-inset-top) + 10px); transform: translateX(-50%); padding: 10px 16px; border-radius: 999px;
+  border: 1px solid var(--gold); background: #2a1d3f; color: var(--cream); font-weight: 700; box-shadow: var(--shadow-2); }
+
+/* ---- Milestone 10: dialogue never clips ------------------------------------------------------
+   Root cause: the sheet is anchored to the bottom with no max-height and no word wrapping, so long
+   lines, many choices or short screens pushed it above the top of the viewport. Now it is capped to
+   the space between the top bar and the dock, its body scrolls, and long words wrap. */
+.pv-dialogue { max-height: calc(var(--vh, 100dvh) - 150px - env(safe-area-inset-bottom)); box-sizing: border-box; align-items: stretch; overflow: hidden; }
+.pv-dialogue__portrait { align-self: flex-start; }
+.pv-dialogue__body { display: flex; flex-direction: column; min-height: 0; overflow: hidden; }
+.pv-dialogue__text { flex: 1 1 auto; overflow-wrap: anywhere; hyphens: auto; overflow-y: auto; min-height: 1.45em; padding-right: 4px; overscroll-behavior: contain; }
+.pv-dialogue__choices { overflow-y: auto; min-height: 0; flex: 0 1 auto; }
+.pv-choice { overflow-wrap: anywhere; line-height: 1.3; }
+.pv-dialogue__name { overflow-wrap: anywhere; }
+.pv-dialogue__actions { flex-wrap: wrap; flex: none; }
+@media (max-width: 560px) {
+  .pv-dialogue { max-height: calc(var(--vh, 100dvh) - 128px - env(safe-area-inset-bottom)); padding: 10px 12px; gap: 8px; }
+  .pv-dialogue__text { font-size: 14px; }
+}
+@media (max-height: 460px) {
+  .pv-dialogue { bottom: calc(env(safe-area-inset-bottom) + 56px); max-height: calc(var(--vh, 100dvh) - 110px); }
+  .pv-dialogue__portrait { display: none; }
+}
+/* the same rules for every other in-world text surface */
+.pv-modal, .pv-shop__row, .pv-note, .pv-entry, .pv-prompt, .pv-nametag, .modal__title { overflow-wrap: anywhere; }
+.pv-shop__row { gap: 8px; }
+.pv-shop__row > span { min-width: 0; }
+.pv-shop__row > button { flex: none; }
+
+/* ---- The Song Beneath the Stars --------------------------------------------------------------------------------------- */
+.pv-dialogue__text.is-narration { font-style: italic; opacity: 0.94; }
+.pv-choice--kindness .pv-choice__tone { color: #ff9db0; } .pv-choice--curiosity .pv-choice__tone { color: #7fc8ff; }
+.pv-choice--courage .pv-choice__tone { color: #ffb85c; } .pv-choice--patience .pv-choice__tone { color: #9fe0c0; }
+.pv-choice--playfulness .pv-choice__tone { color: #c8a2ff; }
+.pv-listen .pv-karaoke__meter { margin: 10px 0 2px; }
+.pv-story__entry p { margin: 0; }
+.pv-story__places { margin: 4px 0; padding: 0; list-style: none; display: grid; gap: 4px; font-size: 14px; }
+.pv-story__hear { margin-left: 8px; min-height: 28px; padding: 2px 10px; font-size: 12px; }
+.pv-story .pv-quest__hint { margin: 0; }
+@media (prefers-reduced-motion: reduce) { .pv-listen .pv-karaoke__meter > span { transition: none; } }
+
+/* Conversation keyboard hints + the keyboard-highlighted reply (PC) */
+.pv-choice.is-hot { border-color: var(--orange); box-shadow: 0 0 0 2px rgb(255 138 53 / 0.45); }
+.pv-choice__key { flex: none; min-width: 18px; text-align: center; font-size: 11px; padding: 1px 5px; }
+.pv-dialogue__keys { font-size: 12px; opacity: 0.7; margin-left: auto; margin-right: 8px; white-space: nowrap; }
+.pv-dialogue__choices:focus { outline: none; }
+@media (max-width: 640px) { .pv-dialogue__keys { display: none; } }

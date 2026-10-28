@@ -1,0 +1,18 @@
+PASS story prompt at the old chime  [Listen to the old street chime]
+PASS multi-speaker scene: narration, then Lumi speaks  [{'Lumi', 'A chime where there should be none'}]
+PASS four replies, tones labelled
+PASS pressing 1 picks the first reply and Lumi answers  [Everywhere and nowhere! Back on the isles, I think, before I]
+PASS answer persisted: scene done, tone recorded, clue and bond stored  [{'tones': {'kindness': 0, 'curiosity': 1, 'courage': 0, 'patience': 0, 'playfulness': 0}, 'bonds': {'lumi': 1, 'biscuit': 0, 'velvet': 0, 'crumpet': 0}, 'chime']
+PASS visiting the finished chime again does not replay the scene  [Biscuit plays by the fountain in Whiskerwick City — in the day, anyway]
+PASS Mabel prompt  [Talk to Mabel]
+PASS her old dialogue is intact and a personality question follows it  [Mabel pats the bench beside her. “Sit a moment. Do you ever think about who’ll r]
+PASS E alone never picks a reply (choices still showing)
+PASS highlight + Enter picked the 2nd reply  [The night the stars went quiet. Everyone saw it; nobody wrote it down.]
+PASS remembered: mabel:topic=t1 and friendship +1  [{'mabel:topic': 't1'}]
+PASS after a reload Mabel remembers your answer  [Captain Marlow used to run the harbo | I’ve been thinking about the story I | ]
+PASS and does not ask the same question twice
+PASS journal has The Story So Far and People tabs  [['The Story So Far', 'People', 'Quests', 'Clues & letters', 'Discoveries', 'Key items']]
+PASS People page shows Mabel and what you learned  [Discovery journal The Story So Far People Quests Clues & letters Discoveries Key items FRIENDSHIP 1/10 Mabel  Cares abou]
+PASS Story So Far keeps the first memory, in your own words  [Discovery journal The Story So Far People Quests Clues & letters Discoveries Key items ACT I · THE SONG WITH A]
+PASS no console errors  [[]]
+== story + residents: 17/17 checks passed

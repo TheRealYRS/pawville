@@ -1,0 +1,70 @@
+/* =========================================================================
+   Milestone 11 fixes — NEW FILE, loaded by TitleScreen.tsx.
+   Selectors are deliberately more specific than world.css so they win
+   regardless of stylesheet load order.
+   ========================================================================= */
+
+/* ---- Exclusive emote menu: names were wrapping one letter per line ----
+   Cause: the EXCLUSIVE badge spanned both grid columns, pushing the label
+   into the 28px icon column. Every child is now placed explicitly. */
+.pv-emote-modal.pv-emote-modal { max-width: min(720px, 96vw); }
+.pv-emote-modal .pv-emotes { max-height: min(70vh, 640px); overflow-y: auto; padding-right: 4px; }
+.pv-emote-modal .pv-emotes__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+  gap: 10px;
+  align-items: stretch;
+}
+.pv-emote-modal .pv-emote { min-width: 0; }
+.pv-emote-modal .pv-emote__btn {
+  height: 100%;
+  min-height: 84px;
+  display: grid;
+  grid-template-columns: 32px minmax(0, 1fr);
+  grid-template-rows: auto auto 1fr;
+  column-gap: 10px;
+  row-gap: 4px;
+  align-items: start;
+  padding: 10px 34px 10px 10px; /* room for the favourite star */
+  text-align: left;
+}
+.pv-emote-modal .pv-emote__btn .pv-emote-icon { grid-column: 1; grid-row: 1 / span 2; align-self: center; }
+.pv-emote-modal .pv-emote__label {
+  grid-column: 2; grid-row: 1; min-width: 0;
+  writing-mode: horizontal-tb; white-space: normal; word-break: normal; overflow-wrap: break-word; line-height: 1.25;
+}
+.pv-emote-modal .pv-emote__badge { grid-column: 2; grid-row: 2; justify-self: start; white-space: nowrap; }
+.pv-emote-modal .pv-emote__tip {
+  grid-column: 1 / -1; grid-row: 3; min-width: 0;
+  writing-mode: horizontal-tb; word-break: normal; overflow-wrap: break-word;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+}
+.pv-emote-modal .pv-emote:not(.is-exclusive) .pv-emote__tip { grid-column: 2; grid-row: 2 / span 2; }
+.pv-emote-modal .pv-emote__btn:focus-visible { outline: var(--pv-focus-ring); outline-offset: 2px; }
+@media (max-width: 420px) {
+  .pv-emote-modal .pv-emotes__grid { grid-template-columns: 1fr; }
+  .pv-emote-modal .pv-emote__btn { min-height: 72px; }
+}
+
+/* ---- Title screen and credits ---- */
+.pv-title .pv-title__card { width: min(560px, 100%); display: grid; justify-items: center; gap: 10px; box-sizing: border-box; }
+.pv-title .pv-title__logo { width: clamp(88px, 22vw, 120px); height: auto; border-radius: 24px; }
+.pv-title h1 { margin: 0; line-height: 1; letter-spacing: 0.02em; }
+.pv-title .pv-title__tagline { margin: 0; color: #ffd9a8; font-style: italic; }
+.pv-title .pv-title__lead { margin: 4px 0 8px; max-width: 40ch; }
+.pv-title .pv-title__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.pv-title .pv-title__actions .btn, .pv-title .pv-title__panel .btn { margin: 0; min-width: 140px; }
+.pv-title .pv-title__panel { width: 100%; text-align: left; display: grid; gap: 12px; }
+.pv-title .pv-title__panel h2 { margin: 0; text-align: center; color: #ffd36b; }
+.pv-title .pv-title__panel ul { margin: 0; padding-left: 1.2em; line-height: 1.7; }
+.pv-title .pv-title__panel .btn { justify-self: center; }
+.pv-title .pv-credits { display: grid; grid-template-columns: max-content 1fr; gap: 8px 16px; margin: 0; padding: 14px 16px; border-radius: 16px; background: #ffffff0d; }
+.pv-title .pv-credits dt { font-weight: 700; color: #ffd9a8; }
+.pv-title .pv-credits dd { margin: 0; }
+@media (max-width: 480px) {
+  .pv-title .pv-title__card { padding: 22px 16px; }
+  .pv-title .pv-title__actions { flex-direction: column; width: 100%; }
+  .pv-title .pv-title__actions .btn { width: 100%; }
+  .pv-title .pv-credits { grid-template-columns: 1fr; }
+  .pv-title .pv-credits dd { margin-bottom: 6px; }
+}

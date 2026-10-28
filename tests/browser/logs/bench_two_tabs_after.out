@@ -1,0 +1,6 @@
+prompt A: Sit on the bench | B: Sit on the bench
+A seat {'x': 321, 'y': 273, 'pose': 'sit', 'facing': 'right', 'lift': 8}
+B sees A at [('5823', 321.0, 273.0, 'sit', 8)]
+B seat {'x': 339, 'y': 273, 'pose': 'sit', 'facing': 'left', 'lift': 8}
+A sees B at [('768c', 339.0, 273.0, 'sit', 8)]
+errors [] []

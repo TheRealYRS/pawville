@@ -1,0 +1,30 @@
+/* Funfair panels (Bumper Paws, Ring Toss) and the ride sheet. Same tokens, radii and button styles as the rest of Pawville. */
+.pv-fair {
+  position: fixed; inset: 0; z-index: 70; display: grid; place-items: center; padding: 10px;
+  background: rgb(18 12 30 / 0.82); backdrop-filter: blur(2px);
+}
+.pv-fair__card {
+  width: min(100%, 760px); max-height: calc(var(--vh, 100vh) - 20px); overflow: auto;
+  display: flex; flex-direction: column; gap: 8px; padding: 14px 16px 16px;
+  border-radius: var(--r-lg); border: 3px solid #e5b76e; background: linear-gradient(180deg, #3a2a52, #2a1f3e); color: var(--cream);
+  box-shadow: var(--shadow-2);
+}
+.pv-fair__head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.pv-fair__head h2 { font-family: var(--font-display); font-size: clamp(1.2rem, 4.5vw, 1.7rem); color: var(--gold); text-shadow: 0 2px 0 #2a1d2f; }
+.pv-fair__hint { color: var(--cream-2); font-size: var(--fs-sm); line-height: 1.35; }
+.pv-fair__hud { display: flex; flex-wrap: wrap; gap: 6px; }
+.pv-fair__stage { position: relative; border-radius: var(--r-md); overflow: hidden; border: 3px solid #2a1d2f; background: #1b1530; aspect-ratio: 320 / 200; width: 100%; }
+.pv-fair__canvas { display: block; width: 100%; height: 100%; image-rendering: pixelated; image-rendering: crisp-edges; touch-action: none; }
+.pv-fair__veil {
+  position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; text-align: center; padding: 14px;
+  background: rgb(27 21 48 / 0.82); color: var(--cream);
+}
+.pv-fair__veil h3 { font-family: var(--font-display); font-size: clamp(1.1rem, 4.5vw, 1.6rem); color: var(--gold); }
+.pv-fair__veil p { max-width: 46ch; color: var(--cream-2); }
+.pv-fair__row { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.pv-fair__msg { min-height: 1.4em; color: var(--cream-2); font-weight: 700; text-align: center; }
+.pv-fair__pad { display: none; justify-content: center; gap: 10px; }
+.pv-fair__pad .pill-btn { min-width: 64px; min-height: 52px; font-size: 1.3rem; justify-content: center; touch-action: none; user-select: none; }
+@media (pointer: coarse), (max-width: 640px) { .pv-fair__pad { display: flex; } }
+@media (max-width: 480px) { .pv-fair { padding: 4px; } .pv-fair__card { padding: 10px; border-width: 2px; } .pv-fair__hint { font-size: 0.8125rem; } }
+.pv-ridebar .pv-sheet__title { font-size: 1rem; }

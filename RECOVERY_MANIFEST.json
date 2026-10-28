@@ -1,0 +1,1429 @@
+{
+  "status": "recovered export baseline, incomplete release",
+  "export_generated_at": "2026-10-25T08:19:30.360Z",
+  "source_files": 270,
+  "missing": [
+    {
+      "path": "docs/milestone-10/dialogue-320x480.png",
+      "reason": "image \u2014 referenced in the project map; content is not interpretable as text",
+      "sha256": "52de32a56ccd2c2ef04c29c822e069740b2aa88b18c447b439a02f3e2c704325"
+    },
+    {
+      "path": "docs/milestone-10/ducks-on-water.png",
+      "reason": "image \u2014 referenced in the project map; content is not interpretable as text",
+      "sha256": "d6df7f2273045599068109945d0ef41bacae2e99a7fa1629ffc8f2fbb8fdda7b"
+    },
+    {
+      "path": "docs/milestone-10/cats-after.png",
+      "reason": "image \u2014 referenced in the project map; content is not interpretable as text",
+      "sha256": "af466ccf39b70d2946a0c9c1ed1555d5bd7c89707560ffe95844a5d2a48d39eb"
+    },
+    {
+      "path": "docs/milestone-10/ferris-ride-top.png",
+      "reason": "image \u2014 referenced in the project map; content is not interpretable as text",
+      "sha256": "3b4d462d14af6276c9ac60594f55490cb3f7f35be91a3238553a1dd611294d8e"
+    },
+    {
+      "path": "docs/milestone-10/home-garden.png",
+      "reason": "image \u2014 referenced in the project map; content is not interpretable as text",
+      "sha256": "d662b6ebfabf7f7ebb3cd58303bf3b4414e4db2abfc62b4149bbff520a155010"
+    },
+    {
+      "path": "docs/milestone-10/cats-before.png",
+      "reason": "image \u2014 referenced in the project map; content is not interpretable as text",
+      "sha256": "da9d999e3f15c2d1d04e3e3634c2f097c742e7d9afc76b0ea6fbae98f88da159"
+    },
+    {
+      "path": "docs/milestone-10/bench-facing-fountain.png",
+      "reason": "image \u2014 referenced in the project map; content is not interpretable as text",
+      "sha256": "83340f1714cd29dbc440809d857473058314ee0e3a4cfbe1bd5062954f904182"
+    },
+    {
+      "path": "public/icons/apple-touch-icon.png",
+      "reason": "image \u2014 referenced in the project map; content is not interpretable as text",
+      "sha256": "043c3e11f4de3cfabc9dadc8827b2a50bcdc9b27c241b867ebba636e49e81ebd"
+    },
+    {
+      "path": "public/icons/icon-1024.png",
+      "reason": "image \u2014 referenced in the project map; content is not interpretable as text",
+      "sha256": "380262c3c89aa5e49adcba362c951f9587a51b533545378e8e093e10a6da274c"
+    },
+    {
+      "path": "public/icons/icon-512.png",
+      "reason": "image \u2014 referenced in the project map; content is not interpretable as text",
+      "sha256": "d6c4a578d0560a06d514dbe0024c0de2c0634302ba3eda7ea881da3d4330dbe1"
+    },
+    {
+      "path": "public/icons/icon-192.png",
+      "reason": "image \u2014 referenced in the project map; content is not interpretable as text",
+      "sha256": "54f3cd5d60059606a2ee71c76e04c19c8a0969c9d5f027e2dcca379c5c5e17a0"
+    },
+    {
+      "path": "public/icons/icon-512-maskable.png",
+      "reason": "image \u2014 referenced in the project map; content is not interpretable as text",
+      "sha256": "6b2e1aaba4e20b86ad4c4f6826c2b385f572f62ceb578d53f08891c944c9cf96"
+    },
+    {
+      "path": "public/favicon.svg",
+      "reason": "image \u2014 referenced in the project map; content is not interpretable as text",
+      "sha256": "d2110f4a4664ba3182dd687f9d2563dc851a5a4a6ea85139ed3b9947affc1eeb"
+    },
+    {
+      "path": "package-lock.json",
+      "reason": "lock file (large, low value)",
+      "sha256": "110c6a0bbc59cf146dde95b1f841cae54aaed723d4bf3acc966bf5e90a125fdc"
+    }
+  ],
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "590f4e99ae5852a7ec364540e51ea088b145098070f8f1e33d1f66e483945118",
+      "bytes": 705
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "a3c82d7152a02c91b8087443b2ba90f06f6bb820bdb475cf1a009fb3011b8ca7",
+      "bytes": 189
+    },
+    {
+      "path": ".nvmrc",
+      "sha256": "f14b4987904bcb5814e4459a057ed4d20f58a633152288a761214dcd28780b56",
+      "bytes": 3
+    },
+    {
+      "path": "MILESTONE10_PROGRESS.md",
+      "sha256": "e9a23072df55744b256b51f9af671f059b0b04b2648bcd90a8e1d58242759250",
+      "bytes": 6245
+    },
+    {
+      "path": "MILESTONE10_REPORT.md",
+      "sha256": "428eea23497e15d04b7114ea94f538e7ebb27bff3c2feab08214ddc639b2e1fb",
+      "bytes": 5639
+    },
+    {
+      "path": "MISSING_BINARY_ASSETS.md",
+      "sha256": "d261d97086171a3f28b082215ed5b3338cd4aae9e2b9877cbc6b07fc73341794",
+      "bytes": 576
+    },
+    {
+      "path": "PAWVILLE_CHANGES.md",
+      "sha256": "bd8dd21617a3c6c1e28cdd3cbdce29ffbf393e1870159b65e98c6cb03b091665",
+      "bytes": 5766
+    },
+    {
+      "path": "PAWVILLE_MILESTONE10_NPC_ROSTER.md",
+      "sha256": "aca7c255f90bcb8996642775de909f72d09e89c0d6b07cfafc3471675c2b11f8",
+      "bytes": 4184
+    },
+    {
+      "path": "PAWVILLE_MILESTONE10_PROGRESS.md",
+      "sha256": "4694315d7342f022c741a0ec7dfc49c0b6a073d4269e9154b0f511fe67230e25",
+      "bytes": 2041
+    },
+    {
+      "path": "PAWVILLE_MILESTONE10_REPORT.md",
+      "sha256": "6b6485fdd024488d8411601c5a4c8f4827b393b34a39bf77940cd6eaf16b6fdf",
+      "bytes": 2677
+    },
+    {
+      "path": "PAWVILLE_MILESTONE3.md",
+      "sha256": "4f27252ad76cf00517e6c7a43dc38025e4cd1e317e95e36c0d170aaea629f1d7",
+      "bytes": 10899
+    },
+    {
+      "path": "PAWVILLE_MILESTONE4.md",
+      "sha256": "711407905313037a6ed2f3e1e5221c84d4ae6df4a105b96762be894cf195779d",
+      "bytes": 16995
+    },
+    {
+      "path": "PAWVILLE_MILESTONE6.md",
+      "sha256": "f5b7c92539c273a1140402c11aa8a0f9f65a20a2d929e1a1d75efd128f1c29d8",
+      "bytes": 10107
+    },
+    {
+      "path": "PAWVILLE_MILESTONE7.md",
+      "sha256": "beab95591a986fa4369da8ad16ab4a324586b38210bccd56833344baf88c9ad5",
+      "bytes": 4733
+    },
+    {
+      "path": "PAWVILLE_MILESTONE8.md",
+      "sha256": "cf85d3986f5ebc2bc6399e0a17b8811007628d3ac6c6f71b5bba5e47c97301e1",
+      "bytes": 5207
+    },
+    {
+      "path": "PAWVILLE_MILESTONE8_1.md",
+      "sha256": "ec50a8c99e6dc51c125a83c07e7469629f2cef494a26d5d4e790c3cc1fc087aa",
+      "bytes": 8354
+    },
+    {
+      "path": "PAWVILLE_MILESTONE8_2.md",
+      "sha256": "f51412b61c56c1c501fc1a08f6532120d135d4345306b5c3d15194ce4bf44b37",
+      "bytes": 1820
+    },
+    {
+      "path": "PAWVILLE_MULTIPLAYER_REPAIR.md",
+      "sha256": "3097e22837a16d797da921fb12f60278a8302d627ad03ee09c7229f118be04f8",
+      "bytes": 13802
+    },
+    {
+      "path": "README.md",
+      "sha256": "546d7f718e7f7f23d872d634f78e226c6971c801feccd8a370f693ccc2b0be25",
+      "bytes": 10203
+    },
+    {
+      "path": "capacitor.config.json",
+      "sha256": "6b2bd7b84c0b78d8da8afb4a9651840a18610f479ee42ceec5441f4139dca390",
+      "bytes": 196
+    },
+    {
+      "path": "desktop/.gitignore",
+      "sha256": "02f067df93b54531420af2cb67e6130428bdaa5becda2b1a5c8fe068a7a863b1",
+      "bytes": 28
+    },
+    {
+      "path": "desktop/copy-web.cjs",
+      "sha256": "b86c9ccf267c8688865634f25010940286d0bec1641b7faa8fbbd421125799b0",
+      "bytes": 680
+    },
+    {
+      "path": "desktop/main.cjs",
+      "sha256": "40e9db1926bd5fb413896051e3d18903ac72af810a13e134ae3971c872238a3a",
+      "bytes": 2374
+    },
+    {
+      "path": "desktop/package.json",
+      "sha256": "4690d7aa5a4219be160da282ae3519104bf2d53679e5f9a515c6172d47d9e8a3",
+      "bytes": 1123
+    },
+    {
+      "path": "desktop/preload.cjs",
+      "sha256": "cc3f3d183f1329f6df067134bf48b79e2d803190ecff23f44dff7b4a947268c0",
+      "bytes": 228
+    },
+    {
+      "path": "index.html",
+      "sha256": "629b7bcbff4c2b0b4ae5ca1d4883d0b32fcda037012332a6d21dce3bbf87ff09",
+      "bytes": 1384
+    },
+    {
+      "path": "netlify.toml",
+      "sha256": "37f63e700a36af4ea755f5ddb3f63a17a8b21e436a5a26cad28503eaad1e81fd",
+      "bytes": 712
+    },
+    {
+      "path": "package.json",
+      "sha256": "b11ac73680647a7cae139757396a67569082751b514a3da8bd455f2792dbc661",
+      "bytes": 1919
+    },
+    {
+      "path": "public/_redirects",
+      "sha256": "3aef8c61730ec03ae698359c8ae80b78c56a62b71474ff77eaba9327d196bd85",
+      "bytes": 25
+    },
+    {
+      "path": "public/manifest.webmanifest",
+      "sha256": "79e0d7caea021adda5e944e64242588edea15fbcb0425caf5e217a984316deec",
+      "bytes": 751
+    },
+    {
+      "path": "public/sw.js",
+      "sha256": "2589be74e1cadfa714d6c3a94b7b3d2d395e2ad4530c536399b83166cd9f7dbb",
+      "bytes": 2280
+    },
+    {
+      "path": "scripts/browser/ui_layout.py",
+      "sha256": "d9f7f406c8559e9520739583caa1785001ecc0e3a6e217152497c8d9fa7336d1",
+      "bytes": 6294
+    },
+    {
+      "path": "scripts/interaction-audit.ts",
+      "sha256": "bb691614eed148f36641b0227f1a9608be46396551033e4dcb949225c6420b3f",
+      "bytes": 2035
+    },
+    {
+      "path": "scripts/map-audit.ts",
+      "sha256": "bdd9134ab37bac1b1d5b377070ab2206e0c3f3395051efb218d51c2b6ba4640d",
+      "bytes": 1081
+    },
+    {
+      "path": "scripts/preview/raster.ts",
+      "sha256": "8e9cefab9707cb9f3ab9dae48c48f4e780820fe4d7099656d53dec2b59e28312",
+      "bytes": 2785
+    },
+    {
+      "path": "scripts/preview/region-png.ts",
+      "sha256": "df1f612fa4e133b9ff82d2e2ec41a453c81e78a63ab9db2adc6a416b66d0e024",
+      "bytes": 1422
+    },
+    {
+      "path": "scripts/preview/telescope-png.mjs",
+      "sha256": "fa2c4a0a505a0f1de1ff67ab0e847d7c5e2016af5eede78095c3f4190885028b",
+      "bytes": 1866
+    },
+    {
+      "path": "scripts/smoke-test.mjs",
+      "sha256": "be5f7a71f677b462d5b86f1f9e091c59ee4ef9e802f7ecbc2b67518fe3a153c5",
+      "bytes": 9323
+    },
+    {
+      "path": "scripts/verify-pawville-files.mjs",
+      "sha256": "f7b0dd4e71238c1d899e886cff6193cf159947e2426e6e42af88a26cd1e404ee",
+      "bytes": 3314
+    },
+    {
+      "path": "src/App.tsx",
+      "sha256": "246282ad2f743eeb54d1b47bbcb611ed1e3a2be6f7c88ec5a33fd9b612022bf0",
+      "bytes": 2885
+    },
+    {
+      "path": "src/components/Button.tsx",
+      "sha256": "b914026442a9547c2a225486fed020971938949102b634d9d7331801d332895b",
+      "bytes": 1070
+    },
+    {
+      "path": "src/components/CatCharacter.tsx",
+      "sha256": "218cf29bd4deb4cd27bf40629fb825b48f09ce83347b7c84f691b9997f12a17b",
+      "bytes": 17960
+    },
+    {
+      "path": "src/components/Confetti.tsx",
+      "sha256": "1834d4fde28cfb84eb57f06ccdf63e6e498c27383f17419c54c3bbc182466487",
+      "bytes": 1097
+    },
+    {
+      "path": "src/components/CustomizeModal.tsx",
+      "sha256": "5a999421cfdc1d31bc3a9f42bacf1bd6fd55f93a0a8a1457918d4d8d006ba4ba",
+      "bytes": 3374
+    },
+    {
+      "path": "src/components/GameBoard.tsx",
+      "sha256": "5ccac47bf30b191c1cb5d98db9a30ce7999e0ebabc4763ee302463decc56329b",
+      "bytes": 3937
+    },
+    {
+      "path": "src/components/GameCell.tsx",
+      "sha256": "1383132a66471082e67946e54628ad3e9cfec7ea6a067aed4bd7513b0509cc69",
+      "bytes": 2467
+    },
+    {
+      "path": "src/components/GameHud.tsx",
+      "sha256": "fef52fa551273822d901d53650e7db82c19417a5bc5fc21661ae2a0f9bcd6c45",
+      "bytes": 739
+    },
+    {
+      "path": "src/components/GameStatus.tsx",
+      "sha256": "81b010cf2c7d8c16787c6a06105a563c210cfc47833e550060e171c63f277936",
+      "bytes": 386
+    },
+    {
+      "path": "src/components/HowToPlay.tsx",
+      "sha256": "e082abd7b0e1461b270e128df14b42bccaede502ab3dc5e56b1763c8c1e1825d",
+      "bytes": 1241
+    },
+    {
+      "path": "src/components/InvitePanel.tsx",
+      "sha256": "867eeb8cb15b090150d87f63e325ab4ebde2cbf30067bc0e49af796e15eaae50",
+      "bytes": 3425
+    },
+    {
+      "path": "src/components/Logo.tsx",
+      "sha256": "edad02e913669ee4159e8e0d2c6027c68c0455e0a471d376997a36286b748cfd",
+      "bytes": 528
+    },
+    {
+      "path": "src/components/Modal.tsx",
+      "sha256": "79e361904cda70fbcdb87d580a7394ea00a96c949899bf6c541e1d99dcf160a8",
+      "bytes": 2248
+    },
+    {
+      "path": "src/components/MoveHistory.tsx",
+      "sha256": "2041adfaa56edeaa870ed622c05399585213089c9ecb71f10ac4965463850b96",
+      "bytes": 892
+    },
+    {
+      "path": "src/components/PawPrint.tsx",
+      "sha256": "e1fe14056a911508a27ddbe8e7d6f4d9268d3839a35302cc4822f39b3b8df086",
+      "bytes": 773
+    },
+    {
+      "path": "src/components/PlayerCard.tsx",
+      "sha256": "701293a8a31f2e91f105e5ba9dfb56757a392e00deac0b9e2a68e5837d4ac95f",
+      "bytes": 2871
+    },
+    {
+      "path": "src/components/ReactionBar.tsx",
+      "sha256": "0bf0c47d8592ec72bb0fc853defeeff34f2131a05942f9f00c9d47e8337996c1",
+      "bytes": 1188
+    },
+    {
+      "path": "src/components/ReactionIcon.tsx",
+      "sha256": "c64493ed86363caaa39ec9e7a2db45f2d2522337b47cdde08b1070a5dd3a30b6",
+      "bytes": 1270
+    },
+    {
+      "path": "src/components/SoundToggle.tsx",
+      "sha256": "77b49d7f357037196a26bbeb12db2577da8abd273467e20b13eb0eee9cb98b3b",
+      "bytes": 1011
+    },
+    {
+      "path": "src/components/Starfield.tsx",
+      "sha256": "4356579a8b8544a3a48f85ac611f660bcb9de09cb2baf0eb7913cd8a8034bef7",
+      "bytes": 1651
+    },
+    {
+      "path": "src/components/StateScreen.tsx",
+      "sha256": "3732454df7b47eeccdefe0e20c15e31ddc7b999b0b6ca7791d73fd492baf6105",
+      "bytes": 1835
+    },
+    {
+      "path": "src/components/Toast.tsx",
+      "sha256": "b0a33415aa2f1badd9e049d0621dc9c7e8bcede9059851030afc5cc753eecc67",
+      "bytes": 355
+    },
+    {
+      "path": "src/components/TopBar.tsx",
+      "sha256": "16bd0344c065097613af02676b1aab71ff92608eef80855c3bcac54296743990",
+      "bytes": 829
+    },
+    {
+      "path": "src/components/VictoryOverlay.tsx",
+      "sha256": "f22c0bdbe7ddc694890969b5c55b203620e43dd7e6a4a65d24b1ee2e2ee8f829",
+      "bytes": 3114
+    },
+    {
+      "path": "src/game/animations.ts",
+      "sha256": "d7e679bdadca04286b7ffe33b40510757083f019e3e5cc5c3724b6f9c0f845e1",
+      "bytes": 1210
+    },
+    {
+      "path": "src/game/gameRules.ts",
+      "sha256": "651867830dda3cf70f526ed5fe504509142f17113f127394ad61482660f3a1fc",
+      "bytes": 2035
+    },
+    {
+      "path": "src/game/matchEngine.ts",
+      "sha256": "0d24dda7d46da72dba86a38d124b801619a412777ffd1705909222e9dd1020e3",
+      "bytes": 4858
+    },
+    {
+      "path": "src/game/messages.ts",
+      "sha256": "f8780a8d03a8f33afc82a40412c792f9d1232739fdda8061c1a754138f112a73",
+      "bytes": 2980
+    },
+    {
+      "path": "src/game/minimaxAI.ts",
+      "sha256": "20d695224853d5386a7899f075074f783488ded881bbee575cf6932326f56a20",
+      "bytes": 2692
+    },
+    {
+      "path": "src/game/types.ts",
+      "sha256": "7a09f01061dd23288519eadaf5517319cc1094e5d2d0092f2a29954b6d74338f",
+      "bytes": 2172
+    },
+    {
+      "path": "src/hooks/useGameFeedback.ts",
+      "sha256": "5546c06bbe5a9474ae35f96a7a62027540724a87b3181fdecf6c4b3fceee431c",
+      "bytes": 1884
+    },
+    {
+      "path": "src/hooks/useOfflineMatch.ts",
+      "sha256": "80671e7dd5d00367e3f676009bb46f29626f4d91e7de94e360f074abb6ab181b",
+      "bytes": 1932
+    },
+    {
+      "path": "src/hooks/useOnlineRoom.ts",
+      "sha256": "cb7d96fa4d3aa6484121e2ed6f25c8bad4e92ab85023678d9370c94f8c333611",
+      "bytes": 8961
+    },
+    {
+      "path": "src/hooks/useSound.ts",
+      "sha256": "24d303cec07f4a4b33d11f0c6a996915f08cfb144e379754c8c21a8934022880",
+      "bytes": 326
+    },
+    {
+      "path": "src/hooks/useToast.ts",
+      "sha256": "ebbf3c9b3df22d35f81877b5fcaff9ce31f82926d8132487f8c649227c074255",
+      "bytes": 591
+    },
+    {
+      "path": "src/lib/multiplayerService.ts",
+      "sha256": "589ff7e24659de5df3ab3bfbc2634bc849ee4c0dc712ed95be18c0de601d681f",
+      "bytes": 4100
+    },
+    {
+      "path": "src/lib/preferences.ts",
+      "sha256": "831bec60b38539708c9eb58da64bf2fa578f16bf4cf7f085274bb44394c2807e",
+      "bytes": 1775
+    },
+    {
+      "path": "src/lib/roomService.ts",
+      "sha256": "48aa5884056e7e50ea788347c8c467fab169ea4cc7b26035debd4372bcb79755",
+      "bytes": 7081
+    },
+    {
+      "path": "src/lib/sessionService.ts",
+      "sha256": "1f9a1b1e3c976158d1ce43a9aa0a811ce283eb9de7f6e6e5579b5d7d67c91bf7",
+      "bytes": 1255
+    },
+    {
+      "path": "src/lib/share.ts",
+      "sha256": "de722a0fe02042606812978c58b1f83acea6eed1be093c43b8181147a1d6eac7",
+      "bytes": 1274
+    },
+    {
+      "path": "src/lib/soundService.ts",
+      "sha256": "dccbe0febdbd604f10fb8a0fe10f02c1e4157a9a94544bb697219815c2091007",
+      "bytes": 5071
+    },
+    {
+      "path": "src/lib/supabaseClient.ts",
+      "sha256": "809a76245c96f2189b4dac8e600e4ee215f8820ebd8d3f0c66ed624a8159bf55",
+      "bytes": 1564
+    },
+    {
+      "path": "src/main.tsx",
+      "sha256": "086698631fddd895b94eb335403229e74d39a504ac88c9a847779120ece92ee1",
+      "bytes": 1505
+    },
+    {
+      "path": "src/pages/GameRoomPage.tsx",
+      "sha256": "b1fc1e54be6993a0bcbe2146cc8167d1bdde2a37c09983cb7c0b3f0dd1b7f9b4",
+      "bytes": 13042
+    },
+    {
+      "path": "src/pages/HomePage.tsx",
+      "sha256": "4fdf231d5c4c8ad187e192ec73e52ded238694691ac47effb8d98ee71af969c5",
+      "bytes": 7538
+    },
+    {
+      "path": "src/pages/NotFoundPage.tsx",
+      "sha256": "c9da2cb2c2bd6a40f15be84e835fd2f52ad019b087f7d1950666beaa1cf9be9b",
+      "bytes": 450
+    },
+    {
+      "path": "src/pages/OfflineGamePage.tsx",
+      "sha256": "5b76a0780c0d186d8839e33386da81a3f7954f60a3c1ab4c3fad18f49426496d",
+      "bytes": 6704
+    },
+    {
+      "path": "src/pawville/activities/park.ts",
+      "sha256": "922411781b5f7b5f216171df60063768875037ced8ba80ef9668bad3aceec4cb",
+      "bytes": 11176
+    },
+    {
+      "path": "src/pawville/adventure/AdventureLayer.tsx",
+      "sha256": "c77725f8674044d9c460774bb431faf7cf4d0ee98f7e1c466bb57a2e49578ab3",
+      "bytes": 36628
+    },
+    {
+      "path": "src/pawville/adventure/content.ts",
+      "sha256": "542d1255379ee00f1538ba5d555654a0f27ae6dc5d632199e7dd3fdf1e2d3b12",
+      "bytes": 30808
+    },
+    {
+      "path": "src/pawville/adventure/dialogue.ts",
+      "sha256": "aba8a6813c92a97ece5eb5012ef45fb8df7efe7ffdcd214649efbf93edc35187",
+      "bytes": 19973
+    },
+    {
+      "path": "src/pawville/adventure/engine.ts",
+      "sha256": "fb1b636ad4e80400a133b1c441e91cb5637fb5586d4a6e4c24ba15e7dd2fac2d",
+      "bytes": 11506
+    },
+    {
+      "path": "src/pawville/adventure/puzzles.ts",
+      "sha256": "8692e849c7cb6917a4823f286d8fc95d8ca39a908eb239bdbeecde764f5f541e",
+      "bytes": 2763
+    },
+    {
+      "path": "src/pawville/adventure/regionKit.ts",
+      "sha256": "d69cb9890ab3f38cf6ebdf8a697364297fb9784030093ef499ac197efdb25537",
+      "bytes": 15100
+    },
+    {
+      "path": "src/pawville/adventure/regions.ts",
+      "sha256": "8580294237f1366c602b5c8d8cab62e205c4f729825a9cbbdbcc423fe0c90a37",
+      "bytes": 36843
+    },
+    {
+      "path": "src/pawville/adventure/state.ts",
+      "sha256": "b87ccae4687fb147f5067788f403cb5aab80d4c00252d7de78b5a1c2b493718a",
+      "bytes": 8943
+    },
+    {
+      "path": "src/pawville/adventure/sync.ts",
+      "sha256": "575214befd53a814f95045d94587cf6bc3a5b3140b86f5dc45e0282988f86f78",
+      "bytes": 1446
+    },
+    {
+      "path": "src/pawville/adventure/telescope.ts",
+      "sha256": "94a4e3c55c2e38b2c1dc86f7721c35802acee869e8a54e6397cf95c2008806aa",
+      "bytes": 10329
+    },
+    {
+      "path": "src/pawville/adventure/useAdventure.ts",
+      "sha256": "bfb4d4a86e13c3d868240d4d680ac4bee8aa6334b0392a8c4e9967e58e03ba5b",
+      "bytes": 7358
+    },
+    {
+      "path": "src/pawville/ambience.ts",
+      "sha256": "f2b31375d1680770cc1c1d58edf166d8afc1116117f6aed2f1bdaea020e946bd",
+      "bytes": 3281
+    },
+    {
+      "path": "src/pawville/appearance.ts",
+      "sha256": "eb25f03498e3a1177a75fcfa0c982e232e8ae8d8ed67b109cf638906dee187ff",
+      "bytes": 18607
+    },
+    {
+      "path": "src/pawville/city/arcadeGames.ts",
+      "sha256": "66102af92c636f3f4e9d20046676338abe4991fa54df4824b213f51920308000",
+      "bytes": 4442
+    },
+    {
+      "path": "src/pawville/city/cafeRush.ts",
+      "sha256": "cd9f389d0528d34c199be817431532e6fe249c767ec68e6b0efb91db256de626",
+      "bytes": 5659
+    },
+    {
+      "path": "src/pawville/city/cinema.ts",
+      "sha256": "5ab7565dd5698eaa7939c2ed1bd6c6d57b9a592a839785b4ac42bba0db9e92a8",
+      "bytes": 5432
+    },
+    {
+      "path": "src/pawville/city/cityDistricts.ts",
+      "sha256": "2c4c7f13614b14aaf47d758ff4881b384f9090f5df4cd5d825c3d58f02529b5e",
+      "bytes": 23747
+    },
+    {
+      "path": "src/pawville/city/cityRegion.ts",
+      "sha256": "1f16bf6be17d18d56bb1e5dbaba5cf4f9bcd07495a8e41668590555f438b895c",
+      "bytes": 17525
+    },
+    {
+      "path": "src/pawville/city/economy.ts",
+      "sha256": "1676058f9f3e8f483d02104b281ed31874003a2d200f46254894e42eb9ee328b",
+      "bytes": 7766
+    },
+    {
+      "path": "src/pawville/city/ferrisRide.ts",
+      "sha256": "a089f92021ae5c72ccb7f6b120f0cc4536cf30f37dba5a927d832c2bd706e3ee",
+      "bytes": 2989
+    },
+    {
+      "path": "src/pawville/city/fishFrenzy.ts",
+      "sha256": "ff1d18d73c99cd8a6f6e0dec28377b2ccd247fda33153e72c34f55c3218d4428",
+      "bytes": 4569
+    },
+    {
+      "path": "src/pawville/city/karaoke.ts",
+      "sha256": "b218b12d80ccb6324b46ca035b398113d5622c51d5bd1f175768148a01e65172",
+      "bytes": 5602
+    },
+    {
+      "path": "src/pawville/city/voices.ts",
+      "sha256": "6611b3545f1f1adafe0411819d45f27b319e1e7acf4bf734d9de5394627b6465",
+      "bytes": 11462
+    },
+    {
+      "path": "src/pawville/components/ActivityDock.tsx",
+      "sha256": "0cbd17c78845fb6ce41f396edbdc20f028f53b548ef0cd59f73cba054ff2510e",
+      "bytes": 31599
+    },
+    {
+      "path": "src/pawville/components/AdventurePanels.tsx",
+      "sha256": "283ff5f12a660690748b007e2b1dc4087f7215c1d9e9f75958b3bc3600e347cf",
+      "bytes": 22183
+    },
+    {
+      "path": "src/pawville/components/BackToPawville.tsx",
+      "sha256": "15a42be6da0726a4c76cfa67a9ce4d491fcb49504221ae9a596bf8b36da10c9f",
+      "bytes": 602
+    },
+    {
+      "path": "src/pawville/components/CityPanels.tsx",
+      "sha256": "8f082b5eae74b6530b2d6a63aed57a508827030f46dd3d8b4012ff6bd0c23a87",
+      "bytes": 17617
+    },
+    {
+      "path": "src/pawville/components/ConfirmDialog.tsx",
+      "sha256": "a4398685afb66d9ef9985d8bb288cc1579c472d33b3cf49a9a0b8a8ccf27154d",
+      "bytes": 771
+    },
+    {
+      "path": "src/pawville/components/CouplePanel.tsx",
+      "sha256": "1ef0fa4f41058a680b1b529c9c4c45c0453db4fb394293117520e7ce77419f84",
+      "bytes": 9034
+    },
+    {
+      "path": "src/pawville/components/DestinationPanel.tsx",
+      "sha256": "ca1947c3ac5bbe26dc7887ef3c8d9d0bc84afd539c0255f21e7254042f9443bf",
+      "bytes": 6902
+    },
+    {
+      "path": "src/pawville/components/EmoteIcon.tsx",
+      "sha256": "cff22988a6f8e470b1408adecda649ccc16229f797b71bec8d48ab250a8f884d",
+      "bytes": 7024
+    },
+    {
+      "path": "src/pawville/components/FerrisRideView.tsx",
+      "sha256": "e36240248cf2cbda4c51bad4a1b767dc0ba3728305d85d1ed7d2d9de1fe1b457",
+      "bytes": 5793
+    },
+    {
+      "path": "src/pawville/components/GameMark.tsx",
+      "sha256": "58f0e30a69389beda681158edb9b723abf08c0a32f4ec3932726449432d387dd",
+      "bytes": 2609
+    },
+    {
+      "path": "src/pawville/components/GameShell.tsx",
+      "sha256": "40bfc4981fb7ca363e49806bf7cbd0037a268b19345d6e8fe8da7c105a12b4f1",
+      "bytes": 3668
+    },
+    {
+      "path": "src/pawville/components/GardenPanel.tsx",
+      "sha256": "4cbb3fc00239186a58f5bac6b5552cac416d30a1d0fa6544b6e3d01680e28d1c",
+      "bytes": 8057
+    },
+    {
+      "path": "src/pawville/components/HomeLifePanels.tsx",
+      "sha256": "3c22110f93d8e7cfb489bad834048f8a243642e8208bb87145e93656fbe6865e",
+      "bytes": 9946
+    },
+    {
+      "path": "src/pawville/components/HomeRoom.tsx",
+      "sha256": "441369e4b5abcbfc3449390acea5c8602dc0ec2b63b3fcbfb9f70b570867b2d4",
+      "bytes": 14182
+    },
+    {
+      "path": "src/pawville/components/PanelSheet.tsx",
+      "sha256": "d5269ffd651d3d467ab1d227941d18a24702511df1b66f4c9257307ea122a23e",
+      "bytes": 996
+    },
+    {
+      "path": "src/pawville/components/PhotoMode.tsx",
+      "sha256": "b86411605d26fef5bffd12139544c020a0d3e54746d78e8f683181a45bd65b38",
+      "bytes": 12119
+    },
+    {
+      "path": "src/pawville/components/PixelCat.tsx",
+      "sha256": "9cf3b3c14045cf51e0e854cf01dd3bdcf6e6448947340cc3186dd90edc382d33",
+      "bytes": 1924
+    },
+    {
+      "path": "src/pawville/components/RaccoonPortrait.tsx",
+      "sha256": "ae0f6fac4bd608136acabf3dfe2d61cd85a6bc10f9438cf5813659285e744931",
+      "bytes": 4045
+    },
+    {
+      "path": "src/pawville/components/ResultPanel.tsx",
+      "sha256": "bcb84e20837710b88845c55d9733ed9782561672842339db1828eb6605af75cb",
+      "bytes": 3371
+    },
+    {
+      "path": "src/pawville/components/SessionBar.tsx",
+      "sha256": "cc0d711f92a4f211a00e7344527bf1b0c612087cca4201bcc24ce886be047873",
+      "bytes": 5168
+    },
+    {
+      "path": "src/pawville/components/ShowPanels.tsx",
+      "sha256": "bde26e80116a43ce233449c7ae94257da5bb79b99760dd940b0642cc243e4398",
+      "bytes": 27972
+    },
+    {
+      "path": "src/pawville/components/TelescopeView.tsx",
+      "sha256": "ec0490ef0831c1318e7c9ed7b682b2f75ac5d5876ecb24fb6c4d473650077efd",
+      "bytes": 7729
+    },
+    {
+      "path": "src/pawville/components/TownCanvas.tsx",
+      "sha256": "28ec3180b33b49fdbfd2b6176353c04a69c6c83cf5cd188573819ae2ca7cc77f",
+      "bytes": 23434
+    },
+    {
+      "path": "src/pawville/components/TownMenus.tsx",
+      "sha256": "a394e7afe86f00db6989eb496ce68d5b076b20a761aadc2032a066a7626c2a4e",
+      "bytes": 9690
+    },
+    {
+      "path": "src/pawville/components/VirtualJoystick.tsx",
+      "sha256": "7a7d9f3b5672edaf982d6290d8c2243f8512d720c2036b490044f413c9e9d408",
+      "bytes": 1843
+    },
+    {
+      "path": "src/pawville/components/Wardrobe.tsx",
+      "sha256": "059a5b87e0205e71c43b7f6b97df2f942036319e35adc9d092945eb1ff42c0d1",
+      "bytes": 7479
+    },
+    {
+      "path": "src/pawville/components/panelLayout.ts",
+      "sha256": "e22caa5efe5fb9eaefbef57669961431eccec9d66221c9f0134f1f98a81f0719",
+      "bytes": 349
+    },
+    {
+      "path": "src/pawville/couple/activitySession.ts",
+      "sha256": "c4c273c235a1f9829850e357f5887db47ce66c11c64c2823d7b1cf1b1c8dc7d5",
+      "bytes": 15579
+    },
+    {
+      "path": "src/pawville/couple/coupleView.ts",
+      "sha256": "192a142a47bf2c48f565d210d20432f86483256d038034404ebf799db29a454a",
+      "bytes": 3342
+    },
+    {
+      "path": "src/pawville/couple/emotes.ts",
+      "sha256": "006839b0adbac1e57935cebb07e1f33c89c63d5967365bce47fe2152dbc03e86",
+      "bytes": 7471
+    },
+    {
+      "path": "src/pawville/couple/pairController.ts",
+      "sha256": "110598ec16bcb8e00bd968fd3a3561ca4bb285ee4f0c6336b38025769c9d45fb",
+      "bytes": 17738
+    },
+    {
+      "path": "src/pawville/couple/pairHub.ts",
+      "sha256": "7b30ce688e3186c4dfc5f6e9402ede5c2c913507c05430dbb3ddf7335325541a",
+      "bytes": 3809
+    },
+    {
+      "path": "src/pawville/couple/pairModel.ts",
+      "sha256": "91c1a3600b9861e61ff429cb9df07cbd5a6648195aeaad809b5db35fd1efbe2f",
+      "bytes": 4319
+    },
+    {
+      "path": "src/pawville/couple/pairService.ts",
+      "sha256": "8ed519f51546f7effaa780c6b5fe95fefcec0643f41d5ac79ba8228fb116e789",
+      "bytes": 4322
+    },
+    {
+      "path": "src/pawville/couple/pawHold.ts",
+      "sha256": "196b353ea71d8e30e6e001f16ef81bc9679b772939a9adf1aaa8b1ceed58b825",
+      "bytes": 2056
+    },
+    {
+      "path": "src/pawville/couple/transport.ts",
+      "sha256": "72d1caafec20cee8961d5f4aca16799acf9f9da81475b02982125a4975cc207b",
+      "bytes": 9129
+    },
+    {
+      "path": "src/pawville/destinations.ts",
+      "sha256": "b0718104bfcdbdf2fdd3e60426a370409f75e7a9dfe6434d0ff8d9869ccde320",
+      "bytes": 8445
+    },
+    {
+      "path": "src/pawville/games/battleship/engine.ts",
+      "sha256": "fa692795c4816b646cf5d8deb3442d502e3e75192ec12cde2b1ece65b352f09a",
+      "bytes": 9143
+    },
+    {
+      "path": "src/pawville/games/boxing/engine.ts",
+      "sha256": "fece573897a2b5cc3c080d3955f56dbe3c841bf0dd505ecaec8728dd08cb74a3",
+      "bytes": 14411
+    },
+    {
+      "path": "src/pawville/games/memory/engine.ts",
+      "sha256": "adba3c1ce6124b722a74d3e694eeacd04a0e34596ec7ab7bb08f7d72663ff05e",
+      "bytes": 4887
+    },
+    {
+      "path": "src/pawville/games/pawtype/passages.ts",
+      "sha256": "7fd396890e6c5d9d3d4193e7230379d8d0bf408b67f888fd1f35aa18b34365d6",
+      "bytes": 3218
+    },
+    {
+      "path": "src/pawville/games/pawtype/phrases.ts",
+      "sha256": "e73cbb1dd52debfce4476965e8964f6a4cd201dafbed23c0601d8689c4413efe",
+      "bytes": 2548
+    },
+    {
+      "path": "src/pawville/games/pawtype/typing.ts",
+      "sha256": "0cff53c1fbe2fce295e5407adc91e19a19632442c2fab761b16a789c5ec05005",
+      "bytes": 8163
+    },
+    {
+      "path": "src/pawville/games/puzzle/catalog.ts",
+      "sha256": "b12dc2129993840755e95129daed740c28a90c173758253c8fa73cecd38cf50d",
+      "bytes": 3463
+    },
+    {
+      "path": "src/pawville/games/puzzle/flowerbed.ts",
+      "sha256": "f6eb3ad770bd060936c7f2413d62d87d7dae7e753f1d7f39daa256a6fba6c3bd",
+      "bytes": 3118
+    },
+    {
+      "path": "src/pawville/games/puzzle/napspots.ts",
+      "sha256": "b106033f696b85b4d99dafa62ec21cd50616aea90dbf93f784688da39a970091",
+      "bytes": 3600
+    },
+    {
+      "path": "src/pawville/games/puzzle/patterns.ts",
+      "sha256": "dfcd0e0ad4eaed84bc02f8b230784af2b6ebfabbd5be152f4877cb1939c3be04",
+      "bytes": 2879
+    },
+    {
+      "path": "src/pawville/games/reflex/engine.ts",
+      "sha256": "5fc8159ce8722509dbe003f536360f8c13c9224ff1592da11a1715606506cf8d",
+      "bytes": 2092
+    },
+    {
+      "path": "src/pawville/games/shared.ts",
+      "sha256": "acee326dd9703d271d3b002c182d2b4ef17d05b131fb65590dcd791ef18224a9",
+      "bytes": 2734
+    },
+    {
+      "path": "src/pawville/games/whack/engine.ts",
+      "sha256": "2104d7224dbab15ab334e857fc5b5c6b3d91aa0c0d93dcd760a10fb4966bb54c",
+      "bytes": 5292
+    },
+    {
+      "path": "src/pawville/home/cooking.ts",
+      "sha256": "961900fff35f8edca7b2e91591e081612c8c4835333805d77b64cf15b6404ee3",
+      "bytes": 4536
+    },
+    {
+      "path": "src/pawville/home/decor.ts",
+      "sha256": "86d80e833c22f756c8de18426357ef5e83564b002b012e21874e101207dca01d",
+      "bytes": 16258
+    },
+    {
+      "path": "src/pawville/home/homeArt.ts",
+      "sha256": "e9075f9250d04ca6ce94285e6f73c7bf8d4791dfc33e468b78a8a2879ad9b5c5",
+      "bytes": 39640
+    },
+    {
+      "path": "src/pawville/home/homeGarden.ts",
+      "sha256": "36bf8475b3c31fbb5f23556bc7c33eb6cc26bc1a0be9db62b544e9fb36f60be7",
+      "bytes": 8577
+    },
+    {
+      "path": "src/pawville/home/homeWalk.ts",
+      "sha256": "cad0100d00aa8bde48055a7a4aa7a0308d3fece6b749e72f417800804aa2142e",
+      "bytes": 5662
+    },
+    {
+      "path": "src/pawville/home/mailbox.ts",
+      "sha256": "e9dbbc96eea35d753fd7ec2ba30984cb7b9db29153c0e005181fd8c793bf85cd",
+      "bytes": 2078
+    },
+    {
+      "path": "src/pawville/identity.ts",
+      "sha256": "7c74a05d374b012d3e787c1cd2284850ba6a8a9a61f07428f55799d1b1a44378",
+      "bytes": 4025
+    },
+    {
+      "path": "src/pawville/instanceId.ts",
+      "sha256": "29c5de454ef60df3c63c8357399c2f5f05e70cf6f3dc6aa6e45fd0e3e9b59fbe",
+      "bytes": 1024
+    },
+    {
+      "path": "src/pawville/living/engine.ts",
+      "sha256": "02e20a7cca5c8dd95157212555a5a6f6d719598cb0d13a3f4a1f3e108b132999",
+      "bytes": 5570
+    },
+    {
+      "path": "src/pawville/living/roster.ts",
+      "sha256": "723de2f259c4e2c202eb4f634de1096701dde4ed9bad62ee3fc2c0e3fc212b30",
+      "bytes": 6615
+    },
+    {
+      "path": "src/pawville/memories/photoCompose.ts",
+      "sha256": "e134d642cd670df9457bf46ec101a43e00be2c89eefc5a9f4a4857658c21e122",
+      "bytes": 4946
+    },
+    {
+      "path": "src/pawville/memories/photoFraming.ts",
+      "sha256": "ea87e1da3468dac8c96c25c0da67ab156ac829de38f8da331592756ea0ab1911",
+      "bytes": 3047
+    },
+    {
+      "path": "src/pawville/memories/photoStore.ts",
+      "sha256": "eceb753f7d961b92ca938d1724a65e84324336a4e54a82261e404e6a60f6f67d",
+      "bytes": 4586
+    },
+    {
+      "path": "src/pawville/navigation.ts",
+      "sha256": "199e8f5e0dbc723957b27ff3d3aeaec032976e26f8c65f7a86fde0a41ab33b79",
+      "bytes": 1307
+    },
+    {
+      "path": "src/pawville/net/backend.ts",
+      "sha256": "84e47a18b4a8b43b67f1b368a6a61dddb5145d277c5c730f661cbd07689844b5",
+      "bytes": 2659
+    },
+    {
+      "path": "src/pawville/net/channelRegistry.ts",
+      "sha256": "2fc79e7af274ce2464706b7824f5c35bbdba20a20730fab2a538504b6a4d9797",
+      "bytes": 3173
+    },
+    {
+      "path": "src/pawville/net/presenceProtocol.ts",
+      "sha256": "83ab1d05d651a34926d1b75c8ab87b1e38ba9508899c8aedb026fd1f03932100",
+      "bytes": 12892
+    },
+    {
+      "path": "src/pawville/net/townPresence.ts",
+      "sha256": "89e46e9c1878f4151da15bd1e3e2a8484483805d57b608a343fce51a95846772",
+      "bytes": 8208
+    },
+    {
+      "path": "src/pawville/pages/BoxingPage.tsx",
+      "sha256": "b26bde59d69faa9ff6d7053d5171543553691a52755208750f04405add280477",
+      "bytes": 17996
+    },
+    {
+      "path": "src/pawville/pages/ComingSoonPage.tsx",
+      "sha256": "3761a1e62bbe80d32d74feb400678d0b7af586d08bfafab47f161ded26c7757b",
+      "bytes": 1089
+    },
+    {
+      "path": "src/pawville/pages/CoupleHomePage.tsx",
+      "sha256": "665cffe970e0c877bf730c6dc0c053c0991addb2bc10a2af899eb90ba405a019",
+      "bytes": 18698
+    },
+    {
+      "path": "src/pawville/pages/MemoryPawsPage.tsx",
+      "sha256": "cba7a5e6c47c5a6d4aefd803b42c858bb5bae577d71d6745e92bf17d06e3da2b",
+      "bytes": 10360
+    },
+    {
+      "path": "src/pawville/pages/PairInvitePage.tsx",
+      "sha256": "c4063fb78ae3ac979535588ce7ed496fe59cf27cec85a52cf8e02a34c2837051",
+      "bytes": 2778
+    },
+    {
+      "path": "src/pawville/pages/PawSnapPage.tsx",
+      "sha256": "5a1cc1bd582e1ca77a158ba2414068e5e4fbed576e95b0522eca9872cd96d1b3",
+      "bytes": 4648
+    },
+    {
+      "path": "src/pawville/pages/PawTypePage.tsx",
+      "sha256": "05b673c00db7bb0e57c3cbedab2d87060b9fb34d529cf6593b06914324b793fd",
+      "bytes": 15070
+    },
+    {
+      "path": "src/pawville/pages/PuzzleGardenPage.tsx",
+      "sha256": "d58160dc960414b063235e867d884de19727e2a2f76f0edcc88dcff61d6ebb9f",
+      "bytes": 18780
+    },
+    {
+      "path": "src/pawville/pages/ScrapbookPage.tsx",
+      "sha256": "249d0cf19bcfb3fd6e7214b0e7faba52698dc03778550c7080b24a61d3620ae8",
+      "bytes": 7057
+    },
+    {
+      "path": "src/pawville/pages/TownPage.tsx",
+      "sha256": "a5709d892da55d7d5f0ab03667c4551f4a6aa3438e0a4b63a0d67c16d5d55c94",
+      "bytes": 24147
+    },
+    {
+      "path": "src/pawville/pages/WhackACatPage.tsx",
+      "sha256": "2d15c435b6e8f23cfdd1bb6281e62696dac9612a25b8b1df57f9dde1107fdfad",
+      "bytes": 8888
+    },
+    {
+      "path": "src/pawville/persistence.ts",
+      "sha256": "57042b96476fdfa32673e2965a035a21810a39465d1a40087e6483003ffb74a1",
+      "bytes": 4397
+    },
+    {
+      "path": "src/pawville/render/adventureFx.ts",
+      "sha256": "7b670ad182658331844f686311e69eec136085126dd945f15d31f7a1f5449204",
+      "bytes": 9769
+    },
+    {
+      "path": "src/pawville/render/canvasTypes.ts",
+      "sha256": "a620bf026ae811c10f4d74c8e18b361122a6368a57c2c96a88538bf1707c7852",
+      "bytes": 1331
+    },
+    {
+      "path": "src/pawville/render/catSprites.ts",
+      "sha256": "444eb35a83da3460a3ed50a529978c00714088e1c87e764c5158da51a22fdcc4",
+      "bytes": 36583
+    },
+    {
+      "path": "src/pawville/render/cityArt.ts",
+      "sha256": "27a876c537a66e12039297d55d2b8a94490b8b915fa18fc64f199800c84bbe9c",
+      "bytes": 15426
+    },
+    {
+      "path": "src/pawville/render/districtArt.ts",
+      "sha256": "838a75ef236a7c7c4ad9b5297b306c56dd7986612329b4f9133d93697772f117",
+      "bytes": 26217
+    },
+    {
+      "path": "src/pawville/render/emoteAnim.ts",
+      "sha256": "9440e050ce3bdb7e4f684e1869ce500b308cdb3e4680f022f0aad252d96f848a",
+      "bytes": 29912
+    },
+    {
+      "path": "src/pawville/render/filmArt.ts",
+      "sha256": "a65f381285b58717d064ab3bb5940520b2bf2d4d25b360891806373c15e114c9",
+      "bytes": 12259
+    },
+    {
+      "path": "src/pawville/render/gardenArt.ts",
+      "sha256": "70d0f6dd9e00461e2866e25cfe7fdbe76371ae75e65949e30ede54937f96d9a9",
+      "bytes": 7390
+    },
+    {
+      "path": "src/pawville/render/lighting.ts",
+      "sha256": "4ed637d76c3fdfbb13dc83cba52213e7b52e2251d07fd0721eeee0270ab8fa6b",
+      "bytes": 1972
+    },
+    {
+      "path": "src/pawville/render/pixelFont.ts",
+      "sha256": "49fcd8347b44176c9a08443bff571bafb0ae6f90f5ba3ac7eaea46109c44d2f4",
+      "bytes": 1678
+    },
+    {
+      "path": "src/pawville/render/regionArt.ts",
+      "sha256": "8374b48bc2b496ad0966662161e329d0750a0fcc7d15857c7a24450a4b9baf38",
+      "bytes": 22150
+    },
+    {
+      "path": "src/pawville/render/regionRenderer.ts",
+      "sha256": "d50e243b20f76905eda547655fd88cc71cfe514be90755ab8559c229cf0ceb34",
+      "bytes": 19436
+    },
+    {
+      "path": "src/pawville/render/telescopeArt.ts",
+      "sha256": "6830a58489fe29a2c328203d14267fada1b5aa6a785c10aa5fd64c5354547258",
+      "bytes": 11719
+    },
+    {
+      "path": "src/pawville/render/townArt.ts",
+      "sha256": "ea198bca6945aa4dfcef79dd7952407bfb41a7e4ae9842ca1e6b9d61099fc0df",
+      "bytes": 28890
+    },
+    {
+      "path": "src/pawville/render/townRenderer.ts",
+      "sha256": "a0c0f1ade8c327b8ca10d051148090fd69f8291321f2c0e7b4097ae5dfde0028",
+      "bytes": 43354
+    },
+    {
+      "path": "src/pawville/routes.ts",
+      "sha256": "71f9414460bd34161f6e13b30c56d4a8951cff755d3d08cd674b32a05e7ee333",
+      "bytes": 1843
+    },
+    {
+      "path": "src/pawville/sound.ts",
+      "sha256": "0471139bece8f68b4018bf2e4cc0adc76a99cb35618aa9760156da4b6f8ea9e2",
+      "bytes": 797
+    },
+    {
+      "path": "src/pawville/styles/adventure.css",
+      "sha256": "08a7cca8bb69ad0810068c5bda703225e3b3169ab772da45bb2162a47a09a460",
+      "bytes": 7871
+    },
+    {
+      "path": "src/pawville/styles/city.css",
+      "sha256": "ef4d38503920ae352f0e1cdc0302280bd6135d3e5ff5f494039dd891942fe7ea",
+      "bytes": 12246
+    },
+    {
+      "path": "src/pawville/styles/games.css",
+      "sha256": "686388b7ff56d4a82cc4fc0aa3a4dd7338089024c9975c06ae62ec98af02f516",
+      "bytes": 28847
+    },
+    {
+      "path": "src/pawville/styles/pawville-tokens.css",
+      "sha256": "8453c066e2b2414b462a96d1e0ae703e95605247d25063af284a3e676bbb8c69",
+      "bytes": 1377
+    },
+    {
+      "path": "src/pawville/styles/pawville.css",
+      "sha256": "d333e7e59409d0f83bf80ac7e4e852cf66cfd77f02873515f82b06a0c6f9d42a",
+      "bytes": 15229
+    },
+    {
+      "path": "src/pawville/styles/world.css",
+      "sha256": "cd50d5601c3339a99649b389039bb281c8f0b0d05d10f9133404b3f8b497546a",
+      "bytes": 29837
+    },
+    {
+      "path": "src/pawville/useEnvironment.ts",
+      "sha256": "af041dd8dd221b8bf2f482e6a4688baaac1e69e21f90af2d7b8f026cc4f4ec99",
+      "bytes": 1869
+    },
+    {
+      "path": "src/pawville/usePlazaPresence.ts",
+      "sha256": "60794197d04b50908121562510faf25ea7f2b19a6ef5d8e99f58c60ed2b0952a",
+      "bytes": 3002
+    },
+    {
+      "path": "src/pawville/useWorldSave.ts",
+      "sha256": "a08c0e4a8ab9e4512fbb4f6e9e4ea4e05f2aff0df6c0ab595deae5da8c56f90b",
+      "bytes": 907
+    },
+    {
+      "path": "src/pawville/world/claims.ts",
+      "sha256": "fc3edaeac5f92b318115be37238cee8e663c1a779526f620a082b1139fb91261",
+      "bytes": 266
+    },
+    {
+      "path": "src/pawville/world/environment.ts",
+      "sha256": "5a6525ad97b863242f19ee84ab63560174c4236cb8d49283b7e5d294f6069ac8",
+      "bytes": 7295
+    },
+    {
+      "path": "src/pawville/world/footsteps.ts",
+      "sha256": "51c83b506fb1e9b807223e2c0073fbd7c78f2b92a0efb7515137944f2fa20cf8",
+      "bytes": 5131
+    },
+    {
+      "path": "src/pawville/world/geometry.ts",
+      "sha256": "32e15a000c8a2fd870cd64fbf9b1162970e2c04c547e198440aad09afcd83300",
+      "bytes": 1543
+    },
+    {
+      "path": "src/pawville/world/interaction.ts",
+      "sha256": "c44f7a67fcd5ea303ae358450e5364baf4fa10390305a2caf3fb40d2234f0e77",
+      "bytes": 3304
+    },
+    {
+      "path": "src/pawville/world/mapAudit.ts",
+      "sha256": "f888eb9c1b4e32b00691d105d14ddba6cd8c31edf43c31ccabc67366dc866500",
+      "bytes": 6198
+    },
+    {
+      "path": "src/pawville/world/movement.ts",
+      "sha256": "8c1c3f68d8f29efe396a968a6f9dd2ee4dd05f6d4a1c1f8aa55c89fe25505f5b",
+      "bytes": 6424
+    },
+    {
+      "path": "src/pawville/world/scene.ts",
+      "sha256": "b6fda5a62c4e687db66e9a828390efec1973f7e88bdbd784d1d031757be46b4f",
+      "bytes": 3812
+    },
+    {
+      "path": "src/pawville/world/seating.ts",
+      "sha256": "dcf37171c0e6b2bbc671018929c21e8f3621b50ac1c6523010bd008037351bef",
+      "bytes": 1871
+    },
+    {
+      "path": "src/pawville/world/townMap.ts",
+      "sha256": "4015f0b4d6e8a5a860b3e487fd353b5b630e72df2c5941c310e8e2be9b8ba286",
+      "bytes": 20113
+    },
+    {
+      "path": "src/pawville/worldSave.ts",
+      "sha256": "b18368a3f334c891eab3258197febbe557c62c36c19c1ec73da34ed75a3f5252",
+      "bytes": 13729
+    },
+    {
+      "path": "src/pwa.ts",
+      "sha256": "8c42fcae7a56d58a444ffc6892089522ca502ac59ef75c52092d8c33063e593e",
+      "bytes": 1315
+    },
+    {
+      "path": "src/router.ts",
+      "sha256": "7d10c803532fa77b4465ea6e24202fcb0de8ac3e6de04de45d75194db89361ee",
+      "bytes": 1220
+    },
+    {
+      "path": "src/styles/components.css",
+      "sha256": "be20d9bb1506544d09dc671e2caf547a14d209199830c31569cddb044d3ee101",
+      "bytes": 40003
+    },
+    {
+      "path": "src/styles/designTokens.css",
+      "sha256": "b70336b2f3a262f96d24b6895119665b40de03482c3c5bee5c7e6c474b4c35fb",
+      "bytes": 1737
+    },
+    {
+      "path": "src/styles/globalStyles.css",
+      "sha256": "2174679fcb8c3f34648be568ab1804345d45f26e3c7672820d071cd7e1a9c1a3",
+      "bytes": 1802
+    },
+    {
+      "path": "src/vite-env.d.ts",
+      "sha256": "b4595f028e7438624a40466e98f0641767b3af35b78d9b1427c6d077a774282b",
+      "bytes": 258
+    },
+    {
+      "path": "supabase/migrations/20261023000001_paw_vs_paw_core.sql",
+      "sha256": "30611ab5822a10983f5e06f614558bb67c627dd53803eb940e8f3a54ec5ae34d",
+      "bytes": 27556
+    },
+    {
+      "path": "supabase/migrations/20261023000002_realtime_presence_auth.sql",
+      "sha256": "0184b226761a3d90b2f48bb241c8f023ad28dd035190bd20b195177b051b0df7",
+      "bytes": 1636
+    },
+    {
+      "path": "supabase/migrations/20261024000001_pawville_pairs.sql",
+      "sha256": "f41228cf635c0b7c80cce37a9f8b39bbbd01e5609134ddc5785b78745a683402",
+      "bytes": 14420
+    },
+    {
+      "path": "supabase/migrations/20261026000001_pawville_invite_status.sql",
+      "sha256": "bf6722a765f596c0d95bacd1c4670557d3deac7b5c4a12589eda0d8036922fd1",
+      "bytes": 1932
+    },
+    {
+      "path": "tests/ai.test.ts",
+      "sha256": "a2e116894cb6524ffe3b509cb66833e4bb58212ad53a36f8d4cfda73497b4584",
+      "bytes": 2441
+    },
+    {
+      "path": "tests/concurrency.test.ts",
+      "sha256": "6cd774009a35599be0693e16a3fc102ca8007cb8c05816d1f252f3c97a953abe",
+      "bytes": 2554
+    },
+    {
+      "path": "tests/gameRules.test.ts",
+      "sha256": "20353d963caa44577b1e728acde89116f06ff9150becd9ff400726b71b4fd925",
+      "bytes": 4022
+    },
+    {
+      "path": "tests/pawvilleAdventure.test.ts",
+      "sha256": "1a564c08d7eec8e1e7af4c38c00eda7bbd3b3f2870abdb973fe730b9ca809d23",
+      "bytes": 4855
+    },
+    {
+      "path": "tests/pawvilleBattleship.test.ts",
+      "sha256": "107b27cb8698c03089ac80dbda58613e836c5995788117b3b5aeb0219bb472a8",
+      "bytes": 3387
+    },
+    {
+      "path": "tests/pawvilleBenches.test.ts",
+      "sha256": "b14ec56e434fb2e2c625fea8cbf1366812772fa30b3f116764bd44d1edb0c2df",
+      "bytes": 4154
+    },
+    {
+      "path": "tests/pawvilleBoxing.test.ts",
+      "sha256": "1f491694a0b0bdd03634a1e2caaf1796773b4b77f9814cf92c03676d3d1c4e4f",
+      "bytes": 5073
+    },
+    {
+      "path": "tests/pawvilleCharacters.test.ts",
+      "sha256": "111ba33ecf01d7b3e9e9b55f1bb1454de90ba3597593124cc7d710affcd98262",
+      "bytes": 7620
+    },
+    {
+      "path": "tests/pawvilleCity.test.ts",
+      "sha256": "7fcea3dcf9deec4e0b3c86ab69fc93d163977f7fb48bd1ca815d92d5f6e09143",
+      "bytes": 10539
+    },
+    {
+      "path": "tests/pawvilleCouple.test.ts",
+      "sha256": "a937659362c6aecd4742348fb5dcdb0552ced139444e33c0a7d166b6864e721a",
+      "bytes": 10171
+    },
+    {
+      "path": "tests/pawvilleEmotes.test.ts",
+      "sha256": "43ef1b1986d498377e60b39c5686d47ebee82dd3ff7bb92c17533052279d5b1e",
+      "bytes": 11702
+    },
+    {
+      "path": "tests/pawvilleEnvironment.test.ts",
+      "sha256": "2e4b8c24830017ad59d55b348429e0a7fb530422b2b4f7cba343a694696d81e4",
+      "bytes": 3257
+    },
+    {
+      "path": "tests/pawvilleGames.test.ts",
+      "sha256": "1480e154febc1fac836c14c886348ec8a165cc04725408e4a9b8e28ef2cb7504",
+      "bytes": 6258
+    },
+    {
+      "path": "tests/pawvilleHome.test.ts",
+      "sha256": "80c3e766aabe52bccfe4024501f75c76f2561d3de2f1ce0c972a03bc52db24b7",
+      "bytes": 3744
+    },
+    {
+      "path": "tests/pawvilleHomeCity8.test.ts",
+      "sha256": "cc4b2b5f82814b8283d35162d3f7b1c293200542b0c394e6075d5d6760577b36",
+      "bytes": 6855
+    },
+    {
+      "path": "tests/pawvilleInteraction.test.ts",
+      "sha256": "294437de59e40aae3ae3c15bb13bd9ffd8633d2057f2133a1278a355fbcc94db",
+      "bytes": 5301
+    },
+    {
+      "path": "tests/pawvilleLiving.test.ts",
+      "sha256": "6cc5347d7ba974c2bf8fbb01e0e4cdf6771f081023a7afdeb531263b03dacf45",
+      "bytes": 2532
+    },
+    {
+      "path": "tests/pawvilleM10.test.ts",
+      "sha256": "533a4da6a6fed8ecab93c1a3825fbdd3d976cea893036f23a8a6d9ddb1ea3be2",
+      "bytes": 10732
+    },
+    {
+      "path": "tests/pawvilleM81.test.ts",
+      "sha256": "a067c27900bd2dbba5a71ae198d4bba06df4a357a191115d61cd0b2085fb113a",
+      "bytes": 13150
+    },
+    {
+      "path": "tests/pawvilleM82.test.ts",
+      "sha256": "1c63f573010b546b76a09793ad0b92c6ec455b3a23b8d7072c98b8a35cc9ac6e",
+      "bytes": 10013
+    },
+    {
+      "path": "tests/pawvilleMemoryWhack.test.ts",
+      "sha256": "642ab2adfcf5a20ecd98ff3a7879dd96ac321523d022a2f35b3919c733aa2f59",
+      "bytes": 4351
+    },
+    {
+      "path": "tests/pawvilleMovement.test.ts",
+      "sha256": "dbdc07e2b660757a43f0add090d81cd988217188ce04a3a8e4436f3fa031b3b3",
+      "bytes": 3734
+    },
+    {
+      "path": "tests/pawvilleMultiplayer.test.ts",
+      "sha256": "e0f302f6a50bbb5e4460cb1474aa114592d3275375a1c6588de0e467e2c4bc2e",
+      "bytes": 30098
+    },
+    {
+      "path": "tests/pawvillePark.test.ts",
+      "sha256": "1ae8dce9937f57fa71815a8a820ec1f337d93eb73c468e803c2093b1f3d82540",
+      "bytes": 3927
+    },
+    {
+      "path": "tests/pawvillePersistence.test.ts",
+      "sha256": "3485eb3c97507b323f59e34b9ed46afcfe87e5d87f67157d4d39c6e1747997a2",
+      "bytes": 4668
+    },
+    {
+      "path": "tests/pawvillePhotoHome.test.ts",
+      "sha256": "c1ce69369011b0094a6cce15aa2e1cd3a896f53da665c3b8770bf7a9cd57d4cc",
+      "bytes": 9232
+    },
+    {
+      "path": "tests/pawvillePresence.test.ts",
+      "sha256": "5b1acabcb49847073d4ef17f50100ff6c242b26c2720ea94df655b2d14dbabb0",
+      "bytes": 3309
+    },
+    {
+      "path": "tests/pawvillePuzzles.test.ts",
+      "sha256": "006f3211d9d7f1c456b0156292168f17bffa71781b6aefbc9a4e7c7621f28847",
+      "bytes": 2191
+    },
+    {
+      "path": "tests/pawvilleRoutes.test.ts",
+      "sha256": "8c741aeebdca3bb8a48ce70661f55db76ec9c0344240e007e844037ea7150ef1",
+      "bytes": 2145
+    },
+    {
+      "path": "tests/rematch.test.ts",
+      "sha256": "f26a81f3044b3b093d0aed18de21771cef6234082c169eef584e649b6da9198c",
+      "bytes": 3702
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "93d6784145bb8f62c0e10b0022b7c9c1e82eb0c343af78acadb441d95a6754b0",
+      "bytes": 551
+    },
+    {
+      "path": "vercel.json",
+      "sha256": "c42c6257080049656e173708e306baf6463664960e7405c6cf945a606a296d00",
+      "bytes": 1370
+    },
+    {
+      "path": "vite.config.ts",
+      "sha256": "235089e3538a8ec03e49eb1905a328fb682a785eac2f3c42eb666dbee1d82968",
+      "bytes": 305
+    }
+  ]
+}

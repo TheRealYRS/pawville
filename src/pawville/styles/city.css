@@ -1,0 +1,134 @@
+/* Milestone 7 — Whiskerwick UI (shops, machines, dialogue choices). Uses the existing tokens. */
+.pv-tokens { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: var(--r-pill); background: rgb(255 201 74 / 0.14); border: 1px solid rgb(255 201 74 / 0.5); color: var(--gold); font-weight: 800; white-space: nowrap; }
+.pv-token-icon { display: inline-block; vertical-align: -2px; }
+.pv-shop__h { margin: 10px 0 6px; font-size: 14px; color: var(--gold); }
+.pv-shop__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.pv-shop__row { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 10px; border-radius: 12px; background: var(--panel-2); border: 1px solid var(--border); }
+.pv-shop__row small { opacity: 0.7; font-weight: 400; }
+.pv-shop__row .pill-btn { display: inline-flex; align-items: center; gap: 4px; min-height: 40px; }
+.pv-shop__row .pill-btn:disabled { opacity: 0.45; }
+
+.pv-dialogue__choices { display: grid; gap: 6px; margin-top: 8px; }
+.pv-choice { display: flex; align-items: center; gap: 8px; min-height: 40px; padding: 6px 12px; border-radius: 12px; border: 1px solid var(--border-strong); background: var(--panel-2); color: var(--cream); text-align: left; font: inherit; cursor: pointer; }
+.pv-choice:hover, .pv-choice:focus-visible { border-color: var(--orange); outline: none; }
+.pv-choice__tone { flex: none; font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; padding: 2px 6px; border-radius: 999px; background: rgb(255 255 255 / 0.08); color: var(--lavender-2, #c9bfe8); }
+.pv-choice--friendly .pv-choice__tone { color: #7edb8c; } .pv-choice--curious .pv-choice__tone { color: #9cc3ff; }
+.pv-choice--playful .pv-choice__tone { color: #ff8fb1; } .pv-choice--comforting .pv-choice__tone { color: #ffd27a; }
+.pv-choice--skeptical .pv-choice__tone { color: #ff9d5c; } .pv-choice--mysterious .pv-choice__tone { color: #c79bff; }
+
+.pv-vending__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 10px 0; }
+.pv-vending__slot { display: grid; gap: 4px; place-items: center; min-height: 72px; padding: 8px; border-radius: 12px; border: 2px solid #3d5a8a; background: #1b2440; color: var(--cream); font: inherit; font-weight: 700; cursor: pointer; }
+.pv-vending__slot:hover:not(:disabled) { border-color: #7ed6f6; }
+.pv-vending__slot:disabled { opacity: 0.45; }
+.pv-vending__tray { height: 34px; border-radius: 8px; background: #0e0b14; border: 2px solid #3d5a8a; display: grid; place-items: center; overflow: hidden; }
+.pv-vending__drop { color: var(--gold); font-size: 20px; animation: pv-drop 0.6s cubic-bezier(.3,1.6,.5,1) both; }
+@keyframes pv-drop { from { transform: translateY(-30px); opacity: 0; } to { transform: none; opacity: 1; } }
+
+.pv-claw__box { position: relative; height: 150px; margin: 10px 0; border-radius: 14px; overflow: hidden; background: linear-gradient(#1b2440 0 70%, #ffe1ec 70%); border: 3px solid #e0475c; box-shadow: inset 0 0 0 3px rgb(255 255 255 / 0.15); }
+.pv-claw__claw { position: absolute; top: 4px; transform: translateX(-50%); color: #cfc6e3; font-size: 22px; line-height: 1; transition: top 0.8s ease-in; }
+.pv-claw__claw::before { content: ''; position: absolute; left: 50%; bottom: 100%; width: 2px; height: 200px; background: #cfc6e3; transform: translateX(-1px); }
+.pv-claw__claw.is-dropping { top: 88px; }
+.pv-claw__claw.is-holding { top: 10px; }
+.pv-claw__plush { position: absolute; bottom: 6px; transform: translateX(-50%); image-rendering: pixelated; }
+
+.pv-melody__pads { display: grid; grid-template-columns: repeat(2, minmax(0, 120px)); justify-content: center; gap: 10px; margin: 12px 0; }
+.pv-melody__pad { height: 96px; border-radius: 50% 50% 46% 46%; border: 3px solid rgb(0 0 0 / 0.35); font-size: 28px; color: rgb(255 255 255 / 0.8); cursor: pointer; transition: transform 0.08s, filter 0.08s, box-shadow 0.08s; filter: saturate(0.6) brightness(0.75); }
+.pv-melody__pad--0 { background: #ff8a35; } .pv-melody__pad--1 { background: #6b4fbf; } .pv-melody__pad--2 { background: #2ee86a; } .pv-melody__pad--3 { background: #c98436; }
+.pv-melody__pad.is-lit { filter: none; transform: scale(1.06); box-shadow: 0 0 22px rgb(255 255 255 / 0.55); }
+.pv-melody__pad:disabled { cursor: default; }
+.pv-melody__pad:focus-visible { outline: var(--pv-focus-ring); }
+
+.pv-sitbar { z-index: 24; }
+
+
+@media (prefers-reduced-motion: reduce) {
+  .pv-vending__drop { animation: none; }
+  .pv-claw__claw, .pv-melody__pad { transition: none; }
+}
+
+/* ---- Milestone 8: home life & furniture showroom ---- */
+.pv-recipe { align-items: flex-start; }
+.pv-recipe__needs { display: flex; flex-wrap: wrap; gap: 4px; margin: 4px 0; }
+.pv-recipe__needs span { font-size: 12px; padding: 1px 6px; border-radius: 999px; background: rgb(255 255 255 / 0.06); }
+.pv-recipe__needs .is-have { color: #7edb8c; } .pv-recipe__needs .is-missing { color: #ff9d5c; }
+.pv-recipe__bar { height: 6px; margin-top: 6px; border-radius: 999px; background: rgb(255 255 255 / 0.1); overflow: hidden; }
+.pv-recipe__bar span { display: block; height: 100%; background: linear-gradient(90deg, #ff8a35, #ffd27a); }
+.pv-recipe.is-cooking { border-color: var(--orange); }
+.pv-furnshop__grid { list-style: none; margin: 8px 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; max-height: 52vh; overflow-y: auto; }
+.pv-furnshop__item { display: grid; gap: 4px; justify-items: center; text-align: center; padding: 8px; border-radius: 12px; background: var(--panel-2); border: 1px solid var(--border); }
+.pv-furnshop__item small { opacity: 0.75; }
+.pv-furnshop__item .hm-thumb { image-rendering: pixelated; width: 72px; height: auto; }
+.pv-keepsakes { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.pv-keepsakes li { padding: 4px 10px; border-radius: 999px; background: var(--panel-2); border: 1px solid var(--border); font-size: 13px; }
+.pv-keepsakes--mem li { display: grid; border-radius: 10px; }
+.pv-keepsakes--mem small { opacity: 0.7; }
+
+/* ---- Milestone 8.2: Cat Café Rush ---------------------------------------------------------- */
+.pv-rush__hud, .pv-frenzy__hud { display: flex; flex-wrap: wrap; gap: 6px 14px; justify-content: space-between; font-weight: 800; color: var(--cream, #fff3e6); margin: 6px 0; }
+.pv-rush__hud .pv-rush__lost { opacity: 0.25; }
+.pv-rush__hud span:nth-child(2) { color: #ff8fb1; letter-spacing: 2px; }
+.pv-rush__counter { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; padding: 10px 8px 12px; border-radius: 16px; background: linear-gradient(#3a2a3e 0 72%, #8a5a3b 72% 80%, #6b4329 80%); }
+.pv-rush__seat { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 4px; min-height: 132px; padding: 6px 4px; border: 2px dashed rgb(255 255 255 / 0.15); border-radius: 12px; background: transparent; color: inherit; cursor: pointer; }
+.pv-rush__seat.is-busy { border-style: solid; border-color: rgb(255 201 74 / 0.5); }
+.pv-rush__seat.is-busy:hover, .pv-rush__seat.is-busy:focus-visible { background: rgb(255 201 74 / 0.12); }
+.pv-rush__seat.is-huff { animation: pv-huff 0.3s ease 2; }
+@keyframes pv-huff { 25% { transform: translateX(-3px); } 75% { transform: translateX(3px); } }
+.pv-rush__key { position: absolute; top: 4px; left: 6px; font-size: 11px; font-weight: 800; opacity: 0.6; }
+.pv-rush__bubble { display: inline-flex; gap: 2px; padding: 3px 6px; border-radius: 12px; background: #fff3e6; box-shadow: 0 2px 0 rgb(0 0 0 / 0.25); }
+.pv-rush__empty { font-size: 12px; opacity: 0.5; margin-bottom: 30px; }
+.pv-rush__patience { display: block; width: 80%; height: 6px; border-radius: 3px; background: rgb(0 0 0 / 0.35); overflow: hidden; }
+.pv-rush__patience > span { display: block; height: 100%; transition: width 0.1s linear; }
+.pv-rush__tray { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 10px 0 6px; padding: 8px 10px; border-radius: 999px; background: rgb(255 255 255 / 0.06); min-height: 44px; }
+.pv-rush__tray .pill-btn { margin-left: auto; }
+.pv-rush__menu { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+.pv-rush__item { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 4px; border-radius: 14px; border: 2px solid rgb(255 255 255 / 0.12); background: #2c2246; color: inherit; font-size: 12px; font-weight: 700; cursor: pointer; }
+.pv-rush__item:hover:not(:disabled) { border-color: var(--orange-2, #ff8a35); }
+.pv-rush__item kbd { font-size: 10px; opacity: 0.6; }
+@media (max-width: 420px) { .pv-rush__menu { grid-template-columns: repeat(2, minmax(0, 1fr)); } .pv-rush__seat { min-height: 116px; } }
+
+/* ---- Fish Frenzy ---------------------------------------------------------------------------- */
+.pv-frenzy__canvas { display: block; width: 100%; max-width: 560px; margin: 6px auto; aspect-ratio: 200 / 120; image-rendering: pixelated; border-radius: 12px; border: 3px solid #2a5389; touch-action: manipulation; cursor: pointer; }
+
+/* ---- The Bijou ------------------------------------------------------------------------------ */
+.pv-cinema__hall { padding: 14px 10px 6px; border-radius: 16px; background: radial-gradient(ellipse at top, #4a1a24, #1b0d14 70%); }
+.pv-cinema__screen { padding: 6px; border-radius: 6px; background: #0b0710; box-shadow: 0 0 40px rgb(255 233 168 / 0.12), inset 0 0 0 2px #7a2e3a; }
+.pv-cinema__screen canvas { display: block; width: 100%; aspect-ratio: 160 / 90; image-rendering: pixelated; }
+.pv-cinema__caption { min-height: 2.8em; margin: 10px 4px 4px; text-align: center; font-style: italic; color: #fff3e6; overflow-wrap: anywhere; }
+
+/* ---- Karaoke -------------------------------------------------------------------------------- */
+.pv-karaoke__stage { padding: 14px 12px; border-radius: 16px; background: radial-gradient(circle at 50% 120%, #6b4fbf, #241b3d 70%); text-align: center; }
+.pv-karaoke__lyrics { min-height: 5.6em; }
+.pv-karaoke__line { margin: 4px 0; font-size: 1.25rem; font-weight: 800; line-height: 1.4; overflow-wrap: anywhere; }
+.pv-karaoke__line.is-next { font-size: 1rem; opacity: 0.45; }
+.pv-karaoke__word { display: inline-block; margin: 0 0.18em; color: #cfc6e3; transition: color 0.1s, transform 0.1s; }
+.pv-karaoke__word.is-now { color: #fff3e6; transform: scale(calc(1 + var(--k, 0) * 0.15)); text-shadow: 0 0 12px rgb(255 211 107 / calc(var(--k, 0) * 0.9)); }
+.pv-karaoke__word.is-perfect { color: #ffd36b; }
+.pv-karaoke__word.is-good { color: #7ee0d2; }
+.pv-karaoke__word.is-miss { color: #8a7da0; text-decoration: line-through rgb(255 255 255 / 0.25); }
+.pv-karaoke__meter { height: 4px; margin: 8px 0; border-radius: 2px; background: rgb(0 0 0 / 0.35); overflow: hidden; }
+.pv-karaoke__meter > span { display: block; height: 100%; background: #ff8fb1; }
+.pv-karaoke__paw { width: 76px; height: 76px; border-radius: 50%; border: 3px solid rgb(0 0 0 / 0.3); background: #ff8a35; color: #fff3e6; cursor: pointer; box-shadow: 0 4px 0 #b5531a; touch-action: manipulation; }
+.pv-karaoke__paw:active:not(:disabled) { transform: translateY(3px); box-shadow: 0 1px 0 #b5531a; }
+@media (prefers-reduced-motion: reduce) { .pv-karaoke__word.is-now { transform: none; } .pv-rush__seat.is-huff { animation: none; } }
+
+/* ---- Milestone 10: Ferris wheel ride view ---- */
+.pv-ride { position: fixed; inset: 0; z-index: 60; background: #07060c; animation: pv-ride-in 0.5s ease both; }
+@keyframes pv-ride-in { from { opacity: 0; } to { opacity: 1; } }
+.pv-ride__canvas { position: absolute; inset: 0; width: 100%; height: 100%; image-rendering: pixelated; }
+.pv-ride__bar { position: absolute; left: 50%; bottom: calc(env(safe-area-inset-bottom) + 14px); transform: translateX(-50%); display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px;
+  width: min(620px, calc(100vw - 20px)); padding: 10px 14px; border-radius: 999px; background: rgb(23 19 30 / 0.85); color: var(--cream, #fff3e6); box-sizing: border-box; }
+.pv-ride__caption { flex: 1 1 200px; min-width: 0; overflow-wrap: anywhere; font-weight: 700; }
+@media (prefers-reduced-motion: reduce) { .pv-ride { animation: none; } }
+
+/* ---- Karaoke expansion: genre tags, the band controls, duet parts, syllables ---- */
+.pv-karaoke__genre { opacity: 0.75; font-weight: 600; font-size: 0.85em; }
+.pv-karaoke__band { display: grid; gap: 6px; margin: 8px 0; padding: 8px 10px; border-radius: 12px; background: rgb(0 0 0 / 0.22); text-align: left; font-size: 14px; }
+.pv-karaoke__vol { display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 10px; }
+.pv-karaoke__vol input[type='range'] { width: 100%; accent-color: var(--orange, #ff8a35); min-height: 28px; }
+.pv-karaoke__vocals { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+.pv-karaoke__vocals input { width: 18px; height: 18px; accent-color: var(--orange, #ff8a35); }
+.pv-karaoke__break { margin: 0 0 4px; font-size: 0.95rem; letter-spacing: 0.08em; color: #ffd36b; animation: pv-pop-in 0.3s var(--ease-bounce); }
+.pv-karaoke__part { font-size: 0.65em; letter-spacing: 0.06em; text-transform: uppercase; opacity: 0.8; }
+.pv-karaoke__line.is-part-A { color: #ffb3c6; } .pv-karaoke__line.is-part-B { color: #9cc3ff; }
+.pv-karaoke__word.is-cont { margin-left: 0; }
+.pv-shop__row.is-locked { opacity: 0.6; }

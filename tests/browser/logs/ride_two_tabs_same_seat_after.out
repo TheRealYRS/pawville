@@ -1,0 +1,12 @@
+(0.2, (7, 'queued'), (7, 'queued'), (140, 304, 'stand'), (140, 302, 'stand'))
+(5.0, (7, 'riding'), (6, 'riding'), (186, 266, 'sit'), (156, 291, 'sit'))
+(9.6, (7, 'riding'), (6, 'riding'), (187, 220, 'sit'), (190, 253, 'sit'))
+(14.3, (7, 'riding'), (6, 'riding'), (151, 190, 'sit'), (177, 204, 'sit'))
+(18.9, (7, 'riding'), (6, 'riding'), (95, 215, 'sit'), (126, 191, 'sit'))
+(23.5, (7, 'riding'), (6, 'riding'), (93, 264, 'sit'), (90, 228, 'sit'))
+(28.1, (7, 'riding'), (6, 'riding'), (129, 292, 'sit'), (103, 278, 'sit'))
+(32.8, None, None, None, None)
+samples with both riding: 16  on the SAME seat: 0
+A sees other rider: [{'x': 166.0, 'y': 312.0, 'lift': 0, 'pose': 'stand', 'sortY': None, 'noShadow': None}]
+B sees other rider: [{'x': 166.0, 'y': 312.0, 'lift': 0, 'pose': 'stand', 'sortY': None, 'noShadow': None}]
+errors [] []

@@ -1,0 +1,10 @@
+PASS Wind Steps prompt  [Stand on the old stone steps]
+PASS the listening sheet is up and the scene has NOT started at 1.5 s
+PASS after ~4 s of standing still the scene opens  [The Wind Steps]
+PASS walking resets the listening: still no scene 3 s after moving
+PASS …and it opens once you have been still long enough again
+PASS no console errors  [[]]
+PASS the temple loads as its own region  [temple]
+PASS walk up the old trail to the terrace  [(288, 233.2)]
+PASS no console errors in the temple  [[]]
+== story places: 9/9 checks passed

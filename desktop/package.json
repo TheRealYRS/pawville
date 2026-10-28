@@ -1,0 +1,29 @@
+{
+  "name": "pawville-desktop",
+  "private": true,
+  "version": "3.1.0",
+  "description": "Pawville desktop app (Electron shell around the same web build).",
+  "main": "main.cjs",
+  "author": "Pawville",
+  "scripts": {
+    "copy-web": "node copy-web.cjs",
+    "start": "npm run copy-web && electron .",
+    "dist:win": "npm run copy-web && electron-builder --win nsis",
+    "dist:mac": "npm run copy-web && electron-builder --mac dmg",
+    "dist:linux": "npm run copy-web && electron-builder --linux AppImage"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.pawville.desktop",
+    "productName": "Pawville",
+    "files": ["main.cjs", "preload.cjs", "web/**/*"],
+    "directories": { "output": "release", "buildResources": "build" },
+    "win": { "icon": "web/icons/icon-512.png", "target": "nsis" },
+    "nsis": { "oneClick": false, "allowToChangeInstallationDirectory": true },
+    "mac": { "icon": "web/icons/icon-1024.png", "category": "public.app-category.games" },
+    "linux": { "icon": "web/icons/icon-512.png", "category": "Game" }
+  }
+}

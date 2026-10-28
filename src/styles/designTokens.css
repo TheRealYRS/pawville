@@ -1,0 +1,69 @@
+/* Paw vs Paw — design tokens. Everything visual references these variables. */
+:root {
+  /* surfaces */
+  --bg: #0d0b12;
+  --bg-2: #120f18;
+  --panel: #17131e;
+  --panel-2: #1f1928;
+  --panel-3: #282033;
+  --border: #342a3f;
+  --border-strong: #4a3d59;
+
+  /* brand */
+  --orange: #ff8a35;
+  --orange-2: #ffa45e;
+  --orange-deep: #d9631a;
+  --orange-ink: #2a1203;
+  --lavender: #a89bc9;
+  --lavender-2: #c9bfe8;
+  --lavender-deep: #6f5fa0;
+  --cream: #fff3e6;
+  --cream-2: #e9dccf;
+  --muted: #b9aec6; /* 7.9:1 on --panel */
+  --gold: #ffc94a;
+  --pink: #ff6fa1;
+  --green: #7edb8c;
+  --warn: #ffb36b;
+
+  /* seat colours */
+  --seat-T: var(--orange);
+  --seat-M: var(--lavender);
+
+  /* shape */
+  --r-sm: 10px;
+  --r-md: 16px;
+  --r-lg: 22px;
+  --r-xl: 30px;
+  --r-pill: 999px;
+
+  /* depth */
+  --shadow-1: 0 2px 10px rgb(0 0 0 / 0.35);
+  --shadow-2: 0 14px 40px rgb(0 0 0 / 0.45);
+  --shadow-toy: inset 0 1px 0 rgb(255 255 255 / 0.07), 0 6px 0 rgb(0 0 0 / 0.28), 0 12px 24px rgb(0 0 0 / 0.3);
+  --glow-T: 0 0 0 2px rgb(255 138 53 / 0.75), 0 0 28px rgb(255 138 53 / 0.35);
+  --glow-M: 0 0 0 2px rgb(168 155 201 / 0.8), 0 0 28px rgb(168 155 201 / 0.35);
+
+  /* type */
+  --font-display: 'Fredoka', ui-rounded, 'SF Pro Rounded', 'Nunito', system-ui, sans-serif;
+  --font-ui: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.9375rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.6rem;
+
+  /* motion */
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --t-fast: 140ms;
+  --t-med: 260ms;
+
+  /* layout */
+  --tap: 48px;
+  --page-pad: clamp(12px, 4vw, 24px);
+  --vh: 100vh;
+}
+
+@supports (height: 100dvh) {
+  :root { --vh: 100dvh; }
+}

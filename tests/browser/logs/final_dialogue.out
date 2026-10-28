@@ -1,0 +1,8 @@
+PASS talk prompt shows  [Talk to Mabel]
+PASS E opens the conversation
+PASS E advances one line  ['Hello, dear! I’m Mabel. I’ve l' -> 'Have you noticed the old sailo']
+PASS holding a key advanced at most one line (no skipping)  [counter 3/4]
+PASS walking keys do nothing while talking  [(322, 462)->(322, 462)]
+PASS Escape closes the conversation
+PASS movement restored after closing  [322->345.0]
+== conversation keys (Gate E): 7/7 checks passed

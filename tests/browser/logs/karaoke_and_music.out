@@ -1,0 +1,17 @@
+PASS karaoke prompt at The Purring Cup  [Step up to the karaoke mic]
+PASS all nine songs are listed (3 original + 6 new)  [['Window Seat', 'Biscuit’s Song', 'Lantern Alley', 'Pocket Full of Biscuits', 'Cat Walk Groove', 'Lighthouse Shanty', 'The Yarn Ball Disaster', 'Two Paws, One Umbrella', 'Winter Lanterns']]
+PASS the three original songs are still there  [['Window Seat', 'Biscuit’s Song', 'Lantern Alley']]
+PASS new song listed: Pocket Full of Biscuits
+PASS new song listed: Cat Walk Groove
+PASS new song listed: The Yarn Ball Disaster
+PASS new song listed: Two Paws
+PASS new song listed: Winter Lanterns
+PASS new song listed: Lighthouse Shanty
+PASS story/world-gated songs are locked with a reason (shanty, winter, duet)  [['Lighthouse Shanty', 'Two Paws, One Umbrella', 'Winter Lanterns']]
+PASS band volume slider and vocals-only option are there
+PASS the song stage opens with lyrics
+PASS tapping (right or wrong) never breaks the song  [[]]
+PASS leaving the stage closes the panel (audio stopped in the cleanup)
+PASS The Story So Far has a "Hear" button for a collected phrase
+PASS playing a phrase does not error  [[]]
+== karaoke + music: 16/16 checks passed

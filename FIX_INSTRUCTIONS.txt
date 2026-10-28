@@ -1,0 +1,1 @@
+Extract into the pawville folder containing package.json. Replace src/pawville/home/homeArt.ts. This adds the missing reading-chair art and public/favicon.svg. Run: node --test tests/pawvilleM10.test.ts tests/pawvillePhotoHome.test.ts

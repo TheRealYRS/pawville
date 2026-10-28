@@ -1,0 +1,36 @@
+/* =========================================================================
+   Pawville semantic tokens — built ON the Paw vs Paw tokens (styles/designTokens.css).
+   Nothing here replaces an original value; venues add environmental accents only.
+   ========================================================================= */
+:root {
+  --pv-plum: var(--bg-2);
+  --pv-midnight: var(--bg);
+  --pv-velvet: var(--panel-2);
+  --pv-velvet-2: var(--panel-3);
+  --pv-tangerine: var(--orange);
+  --pv-honey: var(--gold);
+  --pv-cream: var(--cream);
+  --pv-lavender: var(--lavender-2);
+  --pv-rose: var(--pink);
+  --pv-success: var(--green);
+  --pv-line: var(--border);
+  --pv-line-strong: var(--border-strong);
+  --pv-arena: #7ee0d2;
+  --pv-arena-deep: #1f4a4d;
+  --pv-harbor: #5d93c9;
+  --pv-harbor-deep: #18304f;
+  --pv-harbor-wood: #8a5a3b;
+  --pv-garden: #4f9a67;
+  --pv-garden-soft: #7edb8c;
+  --pv-garden-soil: #3d2a20;
+  --pv-booth: #6b4fbf;
+  --pv-ring: #5a4790;
+  --pv-btn-h: var(--tap);
+  --pv-focus-ring: 3px solid var(--gold);
+  --pv-t-flip: 380ms;
+  --pv-t-pop: 220ms;
+  --pv-game-max: 1120px;
+  --pv-num: 'Nunito', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --pv-mono: ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
+  /* breakpoints (documented): phone < 560px · tablet 560–899px · laptop 900–1279px · desktop ≥ 1280px */
+}

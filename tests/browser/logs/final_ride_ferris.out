@@ -1,0 +1,11 @@
+PASS claim published when boarding
+PASS A is seated on the ride  [{'x': 141.10844944658317, 'y': 292.9881846175106, 'pose': 'sit', 'facing': 'down', 'lift': 0, 'sortY': 290.5, 'noShadow': True}]
+PASS B draws A exactly on the ride model's seat for the same instant  [max 0.2px over 5 samples]
+PASS remote rider has the ride draw order
+PASS remote ferris rider has no ground shadow
+PASS rider cannot walk off  [(186.9, 263.4)->(186.9, 263.4)]
+PASS gets off at the next stop; claim released
+PASS B no longer sees A on the ride
+PASS movement restored  [166->226.4]
+PASS no console errors  [[]]
+== ride: ferris: 10/10 checks passed

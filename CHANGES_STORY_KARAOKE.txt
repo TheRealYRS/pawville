@@ -1,0 +1,11 @@
+CONCISE CHANGE LIST
+NEW  src/pawville/story/{model,progress,kit,cast,script1,script_clues,script2,script3,engine,journal,world,pairing,music,musicPlayer}.ts
+NEW  src/pawville/audio/synth.ts
+NEW  src/pawville/render/storyArt.ts
+NEW  src/pawville/components/StoryPanels.tsx
+NEW  src/pawville/city/{karaokeSongs,karaokeBacking,karaokeAudio}.ts
+NEW  tests/pawvilleStory.test.ts, tests/pawvilleKaraokeExpansion.test.ts
+NEW  scripts/render-previews.ts, public/favicon.svg, PAWVILLE_STORY_AND_KARAOKE.md
+EDIT adventure/{state,dialogue,regionKit,regions,content,AdventureLayer}, components/{AdventurePanels,ShowPanels},
+     city/{karaoke,cityDistricts}, render/{adventureFx,regionArt}, world/mapAudit, styles/{adventure,city}.css,
+     scripts/interaction-audit.ts, package.json
